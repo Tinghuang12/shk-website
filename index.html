@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SHK Weaving Technology Co., LTD — The Finest Weaving, Crafted with Distinction</title>
+<meta name="description" content="SHK Weaving Technology Co., LTD — leading professional weaving company founded by Taiwanese and Japanese enterprises. OEM/ODM woven tapes, elastic bands, ribbons and more. 500+ products, 50,000,000m annual capacity.">
+<meta property="og:title" content="SHK Weaving Technology Co., LTD">
+<meta property="og:description" content="The Finest Weaving, Crafted with Distinction — 500+ types of woven tapes, 50,000,000m annual capacity, trusted by adidas, UNIQLO, PUMA and more.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/hero-factory.jpg">
+<link rel="preload" as="image" href="assets/hero-factory.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23d96b4f'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='white' text-anchor='middle'%3ESHK%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --brand:#d96b4f;
+  --brand-dark:#b9532f;
+  --brand-soft:#fbeee9;
+  --ink:#22262b;
+  --ink-soft:#5b636d;
+  --paper:#ffffff;
+  --paper-alt:#f6f5f3;
+  --line:#e6e3df;
+  --max:1180px;
+  --shadow-lg:0 18px 44px rgba(0,0,0,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"Avenir Next","Segoe UI","Helvetica Neue",Arial,"PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* ===== Scroll reveal ===== */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+.reveal.d4{transition-delay:.32s}.reveal.d5{transition-delay:.40s}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .hero-bg{animation:none !important}
+}
+
+/* ===== Header ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:baseline;gap:10px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
+.logo .mark{font-size:26px;color:var(--brand)}
+.logo .sub{font-size:11px;font-weight:600;color:var(--ink-soft);letter-spacing:1.5px;text-transform:uppercase}
+nav.menu{display:flex;gap:26px;font-size:14px;font-weight:600}
+nav.menu a{color:var(--ink-soft);transition:color .2s;position:relative;padding:4px 0}
+nav.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--brand);transition:right .25s}
+nav.menu a:hover{color:var(--brand)}
+nav.menu a:hover::after,nav.menu a.active::after{right:0}
+nav.menu a.active{color:var(--brand)}
+.nav-cta{background:var(--brand);color:#fff;padding:9px 20px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:.5px;transition:background .2s,transform .2s;white-space:nowrap}
+.nav-cta:hover{background:var(--brand-dark);transform:translateY(-1px)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:24px;height:2.5px;background:var(--ink);border-radius:2px;transition:.3s}
+.burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger.open span:nth-child(2){opacity:0}
+.burger.open span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;z-index:99;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(0,0,0,.12);padding:10px 24px 22px;flex-direction:column}
+.mobile-menu.open{display:flex}
+.mobile-menu a{padding:13px 4px;font-weight:600;font-size:15px;color:var(--ink);border-bottom:1px solid var(--paper-alt)}
+.mobile-menu a:active{color:var(--brand)}
+.mobile-menu .m-cta{margin-top:16px;background:var(--brand);color:#fff;text-align:center;border-radius:6px;padding:13px;border-bottom:0;font-weight:700}
+@media(max-width:1080px){
+  nav.menu{display:none}
+  .nav-cta{display:none}
+  .burger{display:flex}
+  .logo .sub{display:none}
+}
+
+/* ===== Hero ===== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:-4%;z-index:-2;background:url('assets/hero-factory.jpg') center/cover no-repeat;animation:heroZoom 22s ease-in-out infinite alternate}
+@keyframes heroZoom{from{transform:scale(1)}to{transform:scale(1.09)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(24,26,30,.9) 0%,rgba(24,26,30,.64) 55%,rgba(24,26,30,.28) 100%)}
+.hero .wrap{padding-top:130px;padding-bottom:110px}
+.hero .eyebrow{display:inline-block;border:1px solid rgba(255,255,255,.45);padding:6px 16px;border-radius:99px;font-size:12px;letter-spacing:3px;font-weight:700;text-transform:uppercase;margin-bottom:26px;backdrop-filter:blur(3px)}
+.hero h1{font-size:clamp(34px,5.2vw,62px);line-height:1.12;font-weight:800;max-width:760px}
+.hero h1 em{color:var(--brand);font-style:normal}
+.hero p.lead{margin-top:22px;max-width:600px;font-size:17px;color:rgba(255,255,255,.85)}
+.hero .actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 30px;border-radius:4px;font-weight:700;font-size:14px;letter-spacing:.5px;transition:.25s}
+.btn-primary{background:var(--brand);color:#fff;box-shadow:0 10px 26px rgba(217,107,79,.4)}
+.btn-primary:hover{background:var(--brand-dark);transform:translateY(-2px)}
+.btn-ghost{border:1px solid rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.scroll-hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);width:26px;height:42px;border:2px solid rgba(255,255,255,.55);border-radius:14px;display:flex;justify-content:center}
+.scroll-hint::before{content:"";width:4px;height:9px;background:#fff;border-radius:3px;margin-top:7px;animation:wheel 1.8s ease-in-out infinite}
+@keyframes wheel{0%{opacity:1;transform:translateY(0)}70%{opacity:0;transform:translateY(14px)}100%{opacity:0}}
+
+/* ===== Stats bar ===== */
+.stats{background:var(--ink);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:38px 24px}
+.stat{text-align:center;padding:8px 6px}
+.stat b{display:block;font-size:clamp(24px,3vw,38px);font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:rgba(255,255,255,.72);letter-spacing:.5px}
+@media(max-width:760px){.stats .wrap{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== Sections ===== */
+section{padding:92px 0}
+section.alt{background:var(--paper-alt)}
+.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head .tag{color:var(--brand);font-weight:800;font-size:13px;letter-spacing:3px;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.sec-head .tag::before{content:"";width:34px;height:2px;background:var(--brand)}
+.sec-head.center .tag{justify-content:center}
+.sec-head.center .tag::after{content:"";width:34px;height:2px;background:var(--brand)}
+.sec-head h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;margin-top:12px;line-height:1.25}
+.sec-head p{margin-top:14px;color:var(--ink-soft)}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.about-grid .txt p{color:var(--ink-soft);margin-bottom:16px;font-size:15.5px}
+.about-grid .txt p:first-of-type{color:var(--ink);font-size:17px}
+.about-img{position:relative}
+.about-img img{border-radius:8px;box-shadow:0 24px 60px rgba(0,0,0,.16)}
+.about-img .chip{position:absolute;left:-18px;bottom:-22px;background:var(--brand);color:#fff;padding:18px 24px;border-radius:8px;box-shadow:0 14px 34px rgba(217,107,79,.4)}
+.about-img .chip b{display:block;font-size:24px;font-weight:800}
+.about-img .chip span{font-size:12px;opacity:.9}
+.values{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:52px}
+.value{background:var(--paper-alt);border:1px solid var(--line);border-radius:8px;padding:22px 14px;text-align:center;transition:transform .25s,box-shadow .25s}
+.value:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.value .ico{font-size:24px}
+.value b{display:block;margin-top:8px;font-size:15px}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}.about-img{margin-top:10px}.values{grid-template-columns:repeat(2,1fr)}}
+
+/* Position banner */
+.position{background:linear-gradient(105deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff;position:relative;overflow:hidden}
+.position::before{content:"SHK";position:absolute;right:-30px;bottom:-70px;font-size:260px;font-weight:800;color:rgba(255,255,255,.06);letter-spacing:-8px;pointer-events:none}
+.position .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-top:74px;padding-bottom:74px}
+.pos b{display:block;font-size:13px;letter-spacing:2.5px;text-transform:uppercase;opacity:.85}
+.pos h3{font-size:26px;font-weight:800;margin-top:10px;line-height:1.3}
+.pos p{margin-top:10px;font-size:14px;opacity:.92}
+@media(max-width:860px){.position .wrap{grid-template-columns:1fr;gap:28px}}
+
+/* Advantages */
+.adv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.adv{background:#fff;border:1px solid var(--line);border-radius:10px;padding:32px;position:relative;overflow:hidden;transition:box-shadow .25s,transform .25s;border-top:3px solid transparent}
+.adv:hover{box-shadow:var(--shadow-lg);transform:translateY(-3px);border-top-color:var(--brand)}
+.adv .num{position:absolute;right:18px;top:6px;font-size:64px;font-weight:800;color:var(--brand-soft)}
+.adv h3{font-size:19px;font-weight:800;color:var(--brand-dark)}
+.adv p{margin-top:10px;color:var(--ink-soft);font-size:14.5px;position:relative}
+@media(max-width:760px){.adv-grid{grid-template-columns:1fr}}
+
+/* Fields */
+.fields{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.field{position:relative;border-radius:8px;overflow:hidden;aspect-ratio:3/4}
+.field img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.field:hover img{transform:scale(1.07)}
+.field span{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 12px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.8px;text-align:center;text-transform:uppercase}
+@media(max-width:900px){.fields{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.fields{grid-template-columns:repeat(2,1fr)}}
+
+/* Products */
+.prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.prod{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:box-shadow .25s,transform .25s}
+.prod:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.prod .ph{height:190px;overflow:hidden;border-bottom:1px solid var(--line)}
+.prod .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.prod:hover .ph img{transform:scale(1.06)}
+.prod .bd{padding:20px 22px 24px}
+.prod h3{font-size:16.5px;font-weight:800}
+.prod p{margin-top:8px;font-size:13.5px;color:var(--ink-soft)}
+@media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.prod-grid{grid-template-columns:1fr}}
+
+/* Capacity */
+.cap-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.cap-big b{display:block;font-size:clamp(44px,6vw,72px);font-weight:800;color:var(--brand);line-height:1;font-variant-numeric:tabular-nums}
+.cap-big span{font-size:15px;color:var(--ink-soft)}
+.cap-big p{margin-top:16px;color:var(--ink-soft);font-size:14.5px}
+.bars{display:flex;flex-direction:column;gap:26px}
+.bar label{display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin-bottom:8px;gap:10px}
+.bar label span:last-child{color:var(--brand-dark);white-space:nowrap}
+.bar .track{height:14px;background:var(--line);border-radius:99px;overflow:hidden}
+.bar .fill{height:100%;border-radius:99px;background:linear-gradient(90deg,var(--brand),var(--brand-dark));width:0;transition:width 1.3s cubic-bezier(.22,.61,.36,1)}
+@media(max-width:860px){.cap-grid{grid-template-columns:1fr}}
+
+/* Equipment */
+.eq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.eq{position:relative;border-radius:10px;overflow:hidden;min-height:330px;color:#fff;display:flex;align-items:flex-end}
+.eq img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(35%);transition:transform .5s,filter .5s}
+.eq:hover img{transform:scale(1.05);filter:grayscale(0%)}
+.eq .ov{position:relative;width:100%;padding:90px 26px 24px;background:linear-gradient(transparent,rgba(10,12,14,.9))}
+.eq h3{font-size:20px;font-weight:800}
+.eq .cap{display:inline-block;margin-top:6px;background:var(--brand);font-size:12px;font-weight:700;padding:4px 12px;border-radius:99px;letter-spacing:.5px}
+.eq p{margin-top:10px;font-size:13.5px;color:rgba(255,255,255,.88)}
+@media(max-width:760px){.eq-grid{grid-template-columns:1fr}}
+
+/* Certifications */
+.cert-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.cert{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 14px;text-align:center;transition:box-shadow .25s,transform .25s}
+.cert:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.cert .ph{height:92px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+.cert img{max-height:88px;width:auto;max-width:100%}
+.cert span{font-size:12px;font-weight:700;color:var(--ink-soft);line-height:1.45;display:block}
+@media(max-width:900px){.cert-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.cert-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Contact */
+.contact{background:linear-gradient(120deg,#23262b,#3a3f46);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding-top:94px;padding-bottom:94px}
+.contact h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;line-height:1.25}
+.contact h2 em{color:var(--brand);font-style:normal}
+.contact p{margin-top:16px;color:rgba(255,255,255,.8)}
+.contact .card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:32px;backdrop-filter:blur(4px)}
+.contact .card h3{font-size:16px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--brand)}
+.contact .row{margin-top:18px;font-size:14.5px}
+.contact .row b{display:block;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:3px}
+@media(max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+
+/* Footer */
+footer{background:#191c20;color:rgba(255,255,255,.65);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;padding:26px 24px;gap:16px;flex-wrap:wrap}
+footer .fl{font-weight:800;color:#fff;letter-spacing:.5px}
+footer .fl span{color:var(--brand)}
+
+/* Back to top */
+#toTop{position:fixed;right:22px;bottom:22px;z-index:90;width:44px;height:44px;border-radius:50%;border:0;background:var(--brand);color:#fff;font-size:18px;cursor:pointer;box-shadow:0 10px 26px rgba(217,107,79,.45);opacity:0;pointer-events:none;transform:translateY(10px);transition:.3s}
+#toTop.show{opacity:1;pointer-events:auto;transform:none}
+#toTop:hover{background:var(--brand-dark)}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="SHK Weaving Technology home">
+      <span class="mark">SHK</span>
+      <span class="sub">Weaving Technology Co., LTD</span>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#about">About</a>
+      <a href="#advantages">Advantages</a>
+      <a href="#products">Products</a>
+      <a href="#capacity">Capacity</a>
+      <a href="#equipment">Equipment</a>
+      <a href="#certifications">Certifications</a>
+    </nav>
+    <a class="nav-cta" href="#contact">OEM / ODM Inquiry</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<div class="mobile-menu" id="mmenu">
+  <a href="#about">About</a>
+  <a href="#advantages">Advantages</a>
+  <a href="#products">Products</a>
+  <a href="#capacity">Capacity</a>
+  <a href="#equipment">Equipment</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#contact" class="m-cta">OEM / ODM Inquiry</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="eyebrow reveal">Since 2015 · Taiwan × Japan Joint Enterprise</span>
+    <h1 class="reveal d1">The Finest Weaving,<br>Crafted with <em>Distinction</em></h1>
+    <p class="lead reveal d2">SHK Weaving Technology is a leading professional weaving company founded by Taiwanese and Japanese enterprises — delivering 500+ types of premium woven tapes to the apparel, medical and industrial safety industries worldwide.</p>
+    <div class="actions reveal d3">
+      <a class="btn btn-primary" href="#products">Explore Our Products</a>
+      <a class="btn btn-ghost" href="#about">Company Profile</a>
+    </div>
+  </div>
+  <div class="scroll-hint" aria-hidden="true"></div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat reveal"><b><span class="count" data-to="50000000" data-suffix="m">0m</span><sup>+</sup></b><span>Annual Production Capacity</span></div>
+    <div class="stat reveal d1"><b><span class="count" data-to="500" data-suffix="+">0+</span></b><span>Types of Woven Tape Products</span></div>
+    <div class="stat reveal d2"><b><span class="count" data-to="40" data-suffix="+">0+</span></b><span>Years of Weaving Expertise</span></div>
+    <div class="stat reveal d3"><b><span class="count" data-to="14000" data-suffix="㎡">0㎡</span></b><span>Vietnam Sewing Factory</span></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Company Profile</span>
+      <h2>A Trusted Partner in the Textile Industry</h2>
+    </div>
+    <div class="about-grid">
+      <div class="txt">
+        <p class="reveal">SHK Weaving Technology Co., Ltd. is a leading professional weaving company founded by Taiwanese and Japanese enterprises. With over 40 years of expertise in weaving and production, we specialize in the manufacturing of high-quality woven tapes, serving both <strong>OEM and ODM</strong> business models to meet diverse customer needs.</p>
+        <p class="reveal d1">We offer a vast range of over 500 different types of woven tapes. Our products find extensive applications across various industries, including general apparel, medical supplies, and industrial safety solutions. With our commitment to innovation and craftsmanship, we deliver woven tapes that meet the highest standards of quality and functionality.</p>
+        <p class="reveal d2">Our rich heritage in weaving technology, coupled with our ability to adapt to evolving market demands, positions us as a trusted partner in the textile industry. We continuously strive to provide customized solutions, exceptional service, and reliable products to our valued clients.</p>
+      </div>
+      <div class="about-img reveal d2">
+        <img src="assets/factory-building.jpg" alt="SHK factory building" loading="lazy">
+        <div class="chip"><b>14,000㎡</b><span>Vietnam Sewing Factory</span></div>
+      </div>
+    </div>
+    <div class="values">
+      <div class="value reveal"><div class="ico">💡</div><b>Mindset</b></div>
+      <div class="value reveal d1"><div class="ico">🛡️</div><b>Safety</b></div>
+      <div class="value reveal d2"><div class="ico">⚖️</div><b>Fairness</b></div>
+      <div class="value reveal d3"><div class="ico">🤝</div><b>Collaboration</b></div>
+    </div>
+  </div>
+</section>
+
+<!-- POSITION BANNER -->
+<div class="position">
+  <div class="wrap">
+    <div class="pos reveal">
+      <b>Industry Position</b>
+      <h3>TOP 10</h3>
+      <p>Among the top 10 in the professional weaving technology industry.</p>
+    </div>
+    <div class="pos reveal d1">
+      <b>Core Business</b>
+      <h3>Weaving · Woven · Braiding</h3>
+      <p>Our core strengths lie in weaving, woven tapes and braiding — a professional ribbon manufacturer jointly established by Taiwanese and Japanese enterprises, offering OEM and ODM business models with 500+ ribbon products.</p>
+    </div>
+    <div class="pos reveal d2">
+      <b>Strategic Positioning</b>
+      <h3>Leading in China · Japan · Vietnam</h3>
+      <p>Leading professional rubber band manufacturing company across China, Japan and Vietnam.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ADVANTAGES -->
+<section id="advantages" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Why SHK</span>
+      <h2>Four Distinct Advantages that Condense the Professionalism of the Ribbon Industry</h2>
+    </div>
+    <div class="adv-grid">
+      <div class="adv reveal"><span class="num">01</span>
+        <h3>Customer Service</h3>
+        <p>Providing exceptional customer service is the key to earning trust and reputation. We uphold this philosophy throughout the entire process — from order placement to final delivery — to promote sales growth and long-term business development.</p>
+      </div>
+      <div class="adv reveal d1"><span class="num">02</span>
+        <h3>Innovative Development</h3>
+        <p>Catering to both OEM and ODM business models with over 40 years of experience, we continuously strive for innovative development. Our portfolio of 500+ ribbon types serves the apparel, medical and industrial safety industries.</p>
+      </div>
+      <div class="adv reveal d2"><span class="num">03</span>
+        <h3>Quality Requirements</h3>
+        <p>We have maintained deep collaboration and long-term supply to the Japanese market, adhering to 100% strict Japanese quality standards to ensure every meter of our products meets the requirements.</p>
+      </div>
+      <div class="adv reveal d3"><span class="num">04</span>
+        <h3>Cost-Effectiveness</h3>
+        <p>We always adhere to comprehensive, high-quality production control — aiming to achieve the most competitive price advantage while maintaining the same level of quality.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FIELDS -->
+<section id="fields">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="tag">Main Fields</span>
+      <h2>Applications Across Every Industry</h2>
+      <p>From sports waist belts and rehabilitation supports to mask cords and apparel weaving tapes — our products serve six major fields.</p>
+    </div>
+    <div class="fields">
+      <div class="field reveal"><img src="assets/field-medical.jpg" alt="Medical field" loading="lazy"><span>Medical</span></div>
+      <div class="field reveal d1"><img src="assets/field-sanitary.jpg" alt="Sanitary field" loading="lazy"><span>Sanitary</span></div>
+      <div class="field reveal d2"><img src="assets/field-apparel.jpg" alt="Apparel field" loading="lazy"><span>Apparel</span></div>
+      <div class="field reveal d3"><img src="assets/field-industrial.jpg" alt="Industrial field" loading="lazy"><span>Industrial</span></div>
+      <div class="field reveal d4"><img src="assets/field-sports.jpg" alt="Sports field" loading="lazy"><span>Sports</span></div>
+      <div class="field reveal d5"><img src="assets/field-daily.jpg" alt="Daily necessities" loading="lazy"><span>Daily Necessities</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Product Details</span>
+      <h2>500+ Types of Woven Tapes &amp; Ribbons</h2>
+      <p>A complete portfolio covering elastic bands, ribbons, jacquard, shoelaces, straps, cords, belts and threads — all customizable through OEM / ODM.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod reveal"><div class="ph"><img src="assets/prod-elastic-bands.jpg" alt="Elastic bands" loading="lazy"></div>
+        <div class="bd"><h3>Elastic Bands</h3><p>Ideal for underwear, pants, baby clothes, sweaters, sportswear, wedding gowns, T-shirts, hats, bras and masks — widely used in cuffs, hems, waistbands, stockings, and sports &amp; medical applications.</p></div></div>
+      <div class="prod reveal d1"><div class="ph"><img src="assets/prod-ribbons.jpg" alt="Ribbons" loading="lazy"></div>
+        <div class="bd"><h3>Ribbons</h3><p>Suitable for climbing &amp; camping safety belts, backpack straps, tents, personal protective equipment, fitness gear, pet leashes and collars, military / police / fire safety belts, luggage straps and more.</p></div></div>
+      <div class="prod reveal d2"><div class="ph"><img src="assets/prod-jacquard.jpg" alt="Jacquard ribbons" loading="lazy"></div>
+        <div class="bd"><h3>Jacquard Ribbons</h3><p>Crafted from polyester, nylon, PP and acrylic — featuring intricate patterns, smooth texture, excellent strength, durability, colorfastness and shape retention.</p></div></div>
+      <div class="prod reveal"><div class="ph"><img src="assets/prod-shoelaces.jpg" alt="Shoelaces" loading="lazy"></div>
+        <div class="bd"><h3>Shoelaces</h3><p>Fasten shoes, decorate uppers, adjust tightness and protect the ankle — providing ample space for healthy foot development, especially for growing youth.</p></div></div>
+      <div class="prod reveal d1"><div class="ph"><img src="assets/prod-nylon.jpg?v=2" alt="Nylon straps" loading="lazy"></div>
+        <div class="bd"><h3>Nylon Straps</h3><p>Widely used in fashion, home textiles, footwear, gift packaging, luggage, decorations, pendant cords, pet supplies, curtains, headphone cords, eco-bags, automotive accessories, DIY crafts and more.</p></div></div>
+      <div class="prod reveal d2"><div class="ph"><img src="assets/prod-pp.jpg" alt="PP straps" loading="lazy"></div>
+        <div class="bd"><h3>PP Straps</h3><p>Polypropylene yarns with excellent plasticity, strong tensile strength, fatigue resistance, low density and good impact performance — versatile across many fields.</p></div></div>
+      <div class="prod reveal"><div class="ph"><img src="assets/prod-elastic-rope.jpg" alt="Elastic ropes" loading="lazy"></div>
+        <div class="bd"><h3>Elastic Ropes</h3><p>A wide range of applications including clothing, construction, transportation equipment, bundling, sports equipment and more.</p></div></div>
+      <div class="prod reveal d1"><div class="ph"><img src="assets/prod-pet-leash.jpg" alt="Pet leash" loading="lazy"></div>
+        <div class="bd"><h3>Pet Leash</h3><p>Nylon construction with vibrant colors and excellent texture. Custom specifications, jacquard patterns, heat-transfer printing and softening treatments — assembled to finished leashes on request.</p></div></div>
+      <div class="prod reveal d2"><div class="ph"><img src="assets/prod-poly-belt.jpg" alt="POLY belt" loading="lazy"></div>
+        <div class="bd"><h3>POLY Belt</h3><p>Polymer belt materials (polyamide, polyester, polyurethane, polyether) for packaging, transportation, construction, medical and manufacturing — high strength, abrasion, corrosion and temperature resistant.</p></div></div>
+      <div class="prod reveal"><div class="ph"><img src="assets/prod-sp-thread.jpg" alt="SP thread" loading="lazy"></div>
+        <div class="bd"><h3>SP Thread</h3><p>Twisted polyester sewing thread with superior tensile strength, luster and abrasion resistance — soft, colorfast, aging- and seawater-resistant with excellent elasticity.</p></div></div>
+      <div class="prod reveal d1"><div class="ph"><img src="assets/prod-sports-belt.jpg" alt="Sports waist belt" loading="lazy"></div>
+        <div class="bd"><h3>Sports &amp; Rehabilitation Waist Belts</h3><p>Supportive woven waist belts for sports performance and medical rehabilitation applications.</p></div></div>
+      <div class="prod reveal d2"><div class="ph"><img src="assets/prod-mask-cord.jpg" alt="Mask cord" loading="lazy"></div>
+        <div class="bd"><h3>Mask Cord</h3><p>Soft, skin-friendly elastic cords engineered for medical and sanitary mask applications.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPACITY -->
+<section id="capacity">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Plant Capacity</span>
+      <h2>Annual Production Capacity of Three Major Products</h2>
+    </div>
+    <div class="cap-grid">
+      <div class="cap-big reveal">
+        <b>50,000K<sup>+</sup></b>
+        <span>meters per year — total capacity</span>
+        <p>In 2020, our company's annual production capacity for the three major ribbon categories exceeded 50,000,000 meters, supported by our 14,000㎡ sewing factory in Vietnam.</p>
+      </div>
+      <div class="bars reveal d1" id="bars">
+        <div class="bar">
+          <label><span>Elastic Cord</span><span>25,000,000 m / year</span></label>
+          <div class="track"><div class="fill" data-w="100%"></div></div>
+        </div>
+        <div class="bar">
+          <label><span>Weaving Tape</span><span>23,000,000 m / year</span></label>
+          <div class="track"><div class="fill" data-w="92%"></div></div>
+        </div>
+        <div class="bar">
+          <label><span>Narrow Woven Tapes</span><span>4,500,000 m / year</span></label>
+          <div class="track"><div class="fill" data-w="18%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT -->
+<section id="equipment" class="alt">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="tag">Main Equipment</span>
+      <h2>Advanced Machinery, Uncompromising Efficiency</h2>
+    </div>
+    <div class="eq-grid">
+      <div class="eq reveal"><img src="assets/machine-crochet.jpg" alt="Crochet machines" loading="lazy">
+        <div class="ov"><h3>Crochet Machines</h3><span class="cap">Capacity 150,000 m / day</span>
+        <p>Producing crochet fabrics for handicrafts, clothing and home textiles — improving fabric efficiency and quality while expanding design and innovation possibilities.</p></div></div>
+      <div class="eq reveal d1"><img src="assets/machine-needle.jpg" alt="High-speed needle machines" loading="lazy">
+        <div class="ov"><h3>High-Speed Needle Machines</h3><span class="cap">Capacity 200,000 m / day</span>
+        <p>Fast ribbon weaving with high automation, compact size, low noise, easy maintenance and high production efficiency — the ideal upgrade from traditional shuttle looms.</p></div></div>
+      <div class="eq reveal"><img src="assets/machine-braiding.jpg" alt="Braiding machines" loading="lazy">
+        <div class="ov"><h3>Braiding Machines</h3><span class="cap">Capacity 47,000 m / day</span>
+        <p>Greatly increased production efficiency — 4–5× faster than low-speed looms, user-friendly and cost-effective.</p></div></div>
+      <div class="eq reveal d1"><img src="assets/machine-jacquard.jpg" alt="Jacquard machines" loading="lazy">
+        <div class="ov"><h3>Jacquard Machines</h3><span class="cap">Capacity 12,000 m / day</span>
+        <p>Computer-controlled looms producing intricate patterned fabrics — achieving complex designs while enhancing fabric efficiency and quality.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="tag">The Himalayas of the Weaving Industry</span>
+      <h2>Company Certifications</h2>
+      <p>Six authoritative certifications — the highest level of trust and recognition given to SHK.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert reveal"><div class="ph"><img src="assets/cert-iso9001.jpg" alt="ISO 9001" loading="lazy"></div><span>ISO 9001 Quality Management System</span></div>
+      <div class="cert reveal d1"><div class="ph"><img src="assets/cert-iso45001.jpg" alt="ISO 45001" loading="lazy"></div><span>ISO 45001 Occupational Health &amp; Safety</span></div>
+      <div class="cert reveal d2"><div class="ph"><img src="assets/cert-iso14001.jpg" alt="ISO 14001" loading="lazy"></div><span>ISO 14001 Environmental Management</span></div>
+      <div class="cert reveal d3"><div class="ph"><img src="assets/cert-oekotex.jpg" alt="OEKO-TEX Standard 100" loading="lazy"></div><span>European Standard Level 1 Safety (Baby Grade)</span></div>
+      <div class="cert reveal d4"><div class="ph"><img src="assets/cert-sgs.jpg" alt="SGS" loading="lazy"></div><span>Internationally Recognized Testing Certification</span></div>
+      <div class="cert reveal d5"><div class="ph"><img src="assets/cert-csr.jpg" alt="CSR" loading="lazy"></div><span>CSR Social Responsibility Management System</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact" style="padding:0">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Excellent Quality,<br><em>Satisfying Service.</em></h2>
+      <p>Join us at SHK Weaving Technology and experience the art of weaving combined with uncompromising quality for your business success. We welcome OEM and ODM inquiries worldwide.</p>
+    </div>
+    <div class="card reveal d1">
+      <h3>Get in Touch</h3>
+      <div class="row"><b>Company</b>SHK Weaving Technology Co., LTD</div>
+      <div class="row"><b>Business Model</b>OEM / ODM woven tape manufacturing</div>
+      <div class="row"><b>Factories</b>China · Japan · Vietnam (14,000㎡ sewing factory)</div>
+      <div class="row"><b>Email</b><a href="mailto:nt.doan@shk-vn.com" style="color:#fff;text-decoration:underline">nt.doan@shk-vn.com</a></div>
+      <div class="row"><b>Phone</b><a href="tel:+84663534199" style="color:#fff">+84 66 353 4199</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fl"><span>SHK</span> Weaving Technology Co., LTD</div>
+    <div>The Finest Weaving, Crafted with Distinction · © 2026 SHK Weaving Technology Co., LTD</div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  var hdr = document.getElementById('hdr');
+  var burger = document.getElementById('burger');
+  var mmenu = document.getElementById('mmenu');
+  var toTop = document.getElementById('toTop');
+
+  /* Header shadow + back-to-top visibility */
+  function onScroll(){
+    hdr.classList.toggle('scrolled', window.scrollY > 8);
+    toTop.classList.toggle('show', window.scrollY > 700);
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* Mobile menu */
+  burger.addEventListener('click', function(){
+    var open = mmenu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+  });
+  mmenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mmenu.classList.remove('open');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* Back to top */
+  toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* Scroll reveal */
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+
+  /* Count-up stats */
+  function animateCount(el){
+    var to = parseInt(el.dataset.to, 10);
+    var suffix = el.dataset.suffix || '';
+    var dur = 1600, t0 = null;
+    function frame(t){
+      if(!t0) t0 = t;
+      var p = Math.min((t - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(to * eased).toLocaleString('en-US') + suffix;
+      if(p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  var cio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ animateCount(e.target); cio.unobserve(e.target); }
+    });
+  }, {threshold:.6});
+  document.querySelectorAll('.count').forEach(function(el){ cio.observe(el); });
+
+  /* Capacity bars */
+  var bars = document.getElementById('bars');
+  if(bars){
+    var bio = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){
+          e.target.querySelectorAll('.fill').forEach(function(f){ f.style.width = f.dataset.w; });
+          bio.unobserve(e.target);
+        }
+      });
+    }, {threshold:.4});
+    bio.observe(bars);
+  }
+
+  /* Active nav highlight */
+  var links = document.querySelectorAll('nav.menu a');
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  var sio = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){ a.classList.remove('active'); });
+        var a = map[e.target.id];
+        if(a) a.classList.add('active');
+      }
+    });
+  }, {rootMargin:'-40% 0px -55% 0px'});
+  Object.keys(map).forEach(function(id){
+    var s = document.getElementById(id);
+    if(s) sio.observe(s);
+  });
+})();
+</script>
+</body>
+</html>
