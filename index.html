@@ -6,7 +6,7 @@
 <title>SHK Weaving Technology Co., LTD — The Finest Weaving, Crafted with Distinction</title>
 <meta name="description" content="SHK Weaving Technology Co., LTD — leading professional weaving company founded by Taiwanese and Japanese enterprises. OEM/ODM woven tapes, elastic bands, ribbons and more. 500+ products, 50,000,000m annual capacity.">
 <meta property="og:title" content="SHK Weaving Technology Co., LTD">
-<meta property="og:description" content="The Finest Weaving, Crafted with Distinction — 500+ types of woven tapes, 50,000,000m annual capacity, trusted by adidas, UNIQLO, PUMA and more.">
+<meta property="og:description" content="The Finest Weaving, Crafted with Distinction — 500+ types of woven tapes, 50,000,000m annual capacity.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="hero-factory.jpg">
 <link rel="preload" as="image" href="hero-factory.jpg">
@@ -26,7 +26,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:"Avenir Next","Segoe UI","Helvetica Neue",Arial,"PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
+body{font-family:"Avenir Next","Segoe UI","Helvetica Neue",Arial,"PingFang TC","Hiragino Sans","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
@@ -51,14 +51,18 @@ header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.08)}
 .logo{display:flex;align-items:baseline;gap:10px;font-weight:800;letter-spacing:.5px;white-space:nowrap}
 .logo .mark{font-size:26px;color:var(--brand)}
 .logo .sub{font-size:11px;font-weight:600;color:var(--ink-soft);letter-spacing:1.5px;text-transform:uppercase}
-nav.menu{display:flex;gap:26px;font-size:14px;font-weight:600}
-nav.menu a{color:var(--ink-soft);transition:color .2s;position:relative;padding:4px 0}
+nav.menu{display:flex;gap:24px;font-size:14px;font-weight:600}
+nav.menu a{color:var(--ink-soft);transition:color .2s;position:relative;padding:4px 0;white-space:nowrap}
 nav.menu a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--brand);transition:right .25s}
 nav.menu a:hover{color:var(--brand)}
 nav.menu a:hover::after,nav.menu a.active::after{right:0}
 nav.menu a.active{color:var(--brand)}
-.nav-cta{background:var(--brand);color:#fff;padding:9px 20px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:.5px;transition:background .2s,transform .2s;white-space:nowrap}
+.nav-cta{background:var(--brand);color:#fff;padding:9px 18px;border-radius:4px;font-size:13px;font-weight:700;letter-spacing:.5px;transition:background .2s,transform .2s;white-space:nowrap}
 .nav-cta:hover{background:var(--brand-dark);transform:translateY(-1px)}
+.lang{display:flex;gap:4px;align-items:center}
+.lang button{border:1px solid var(--line);background:#fff;color:var(--ink-soft);font-size:12px;font-weight:700;padding:5px 9px;border-radius:4px;cursor:pointer;transition:.2s;white-space:nowrap}
+.lang button:hover{border-color:var(--brand);color:var(--brand)}
+.lang button.on{background:var(--brand);border-color:var(--brand);color:#fff}
 .burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
 .burger span{display:block;width:24px;height:2.5px;background:var(--ink);border-radius:2px;transition:.3s}
 .burger.open span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
@@ -69,9 +73,13 @@ nav.menu a.active{color:var(--brand)}
 .mobile-menu a{padding:13px 4px;font-weight:600;font-size:15px;color:var(--ink);border-bottom:1px solid var(--paper-alt)}
 .mobile-menu a:active{color:var(--brand)}
 .mobile-menu .m-cta{margin-top:16px;background:var(--brand);color:#fff;text-align:center;border-radius:6px;padding:13px;border-bottom:0;font-weight:700}
-@media(max-width:1080px){
+.mobile-menu .m-lang{display:flex;gap:8px;padding:14px 0 4px}
+.mobile-menu .m-lang button{flex:1;border:1px solid var(--line);background:#fff;color:var(--ink-soft);font-size:13px;font-weight:700;padding:9px 0;border-radius:6px;cursor:pointer}
+.mobile-menu .m-lang button.on{background:var(--brand);border-color:var(--brand);color:#fff}
+@media(max-width:1180px){
   nav.menu{display:none}
   .nav-cta{display:none}
+  .lang{display:none}
   .burger{display:flex}
   .logo .sub{display:none}
 }
@@ -83,9 +91,9 @@ nav.menu a.active{color:var(--brand)}
 .hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(24,26,30,.9) 0%,rgba(24,26,30,.64) 55%,rgba(24,26,30,.28) 100%)}
 .hero .wrap{padding-top:130px;padding-bottom:110px}
 .hero .eyebrow{display:inline-block;border:1px solid rgba(255,255,255,.45);padding:6px 16px;border-radius:99px;font-size:12px;letter-spacing:3px;font-weight:700;text-transform:uppercase;margin-bottom:26px;backdrop-filter:blur(3px)}
-.hero h1{font-size:clamp(34px,5.2vw,62px);line-height:1.12;font-weight:800;max-width:760px}
+.hero h1{font-size:clamp(34px,5.2vw,62px);line-height:1.18;font-weight:800;max-width:820px}
 .hero h1 em{color:var(--brand);font-style:normal}
-.hero p.lead{margin-top:22px;max-width:600px;font-size:17px;color:rgba(255,255,255,.85)}
+.hero p.lead{margin-top:22px;max-width:640px;font-size:17px;color:rgba(255,255,255,.85)}
 .hero .actions{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap}
 .btn{display:inline-block;padding:14px 30px;border-radius:4px;font-weight:700;font-size:14px;letter-spacing:.5px;transition:.25s}
 .btn-primary{background:var(--brand);color:#fff;box-shadow:0 10px 26px rgba(217,107,79,.4)}
@@ -98,7 +106,7 @@ nav.menu a.active{color:var(--brand)}
 
 /* ===== Stats bar ===== */
 .stats{background:var(--ink);color:#fff}
-.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:38px 24px}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:38px 32px}
 .stat{text-align:center;padding:8px 6px}
 .stat b{display:block;font-size:clamp(24px,3vw,38px);font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums}
 .stat span{font-size:13px;color:rgba(255,255,255,.72);letter-spacing:.5px}
@@ -107,12 +115,12 @@ nav.menu a.active{color:var(--brand)}
 /* ===== Sections ===== */
 section{padding:92px 0}
 section.alt{background:var(--paper-alt)}
-.sec-head{max-width:720px;margin-bottom:52px}
+.sec-head{max-width:760px;margin-bottom:52px}
 .sec-head .tag{color:var(--brand);font-weight:800;font-size:13px;letter-spacing:3px;text-transform:uppercase;display:flex;align-items:center;gap:12px}
 .sec-head .tag::before{content:"";width:34px;height:2px;background:var(--brand)}
 .sec-head.center .tag{justify-content:center}
 .sec-head.center .tag::after{content:"";width:34px;height:2px;background:var(--brand)}
-.sec-head h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;margin-top:12px;line-height:1.25}
+.sec-head h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;margin-top:12px;line-height:1.3}
 .sec-head p{margin-top:14px;color:var(--ink-soft)}
 .sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
 
@@ -161,6 +169,7 @@ section.alt{background:var(--paper-alt)}
 
 /* Products */
 .prod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(min-width:1400px){.prod-grid{grid-template-columns:repeat(4,1fr)}}
 .prod{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:box-shadow .25s,transform .25s}
 .prod:hover{box-shadow:var(--shadow-lg);transform:translateY(-4px)}
 .prod .ph{height:190px;overflow:hidden;border-bottom:1px solid var(--line)}
@@ -169,7 +178,6 @@ section.alt{background:var(--paper-alt)}
 .prod .bd{padding:20px 22px 24px}
 .prod h3{font-size:16.5px;font-weight:800}
 .prod p{margin-top:8px;font-size:13.5px;color:var(--ink-soft)}
-@media(min-width:1400px){.prod-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.prod-grid{grid-template-columns:1fr}}
 
@@ -209,7 +217,7 @@ section.alt{background:var(--paper-alt)}
 /* Contact */
 .contact{background:linear-gradient(120deg,#23262b,#3a3f46);color:#fff}
 .contact .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center;padding-top:94px;padding-bottom:94px}
-.contact h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;line-height:1.25}
+.contact h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;line-height:1.3}
 .contact h2 em{color:var(--brand);font-style:normal}
 .contact p{margin-top:16px;color:rgba(255,255,255,.8)}
 .contact .card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:32px;backdrop-filter:blur(4px)}
@@ -220,7 +228,7 @@ section.alt{background:var(--paper-alt)}
 
 /* Footer */
 footer{background:#191c20;color:rgba(255,255,255,.65);font-size:13px}
-footer .wrap{display:flex;justify-content:space-between;align-items:center;padding:26px 24px;gap:16px;flex-wrap:wrap}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;padding:26px 32px;gap:16px;flex-wrap:wrap}
 footer .fl{font-weight:800;color:#fff;letter-spacing:.5px}
 footer .fl span{color:var(--brand)}
 
@@ -239,39 +247,51 @@ footer .fl span{color:var(--brand)}
       <span class="sub">Weaving Technology Co., LTD</span>
     </a>
     <nav class="menu" id="menu">
-      <a href="#about">About</a>
-      <a href="#advantages">Advantages</a>
-      <a href="#products">Products</a>
-      <a href="#capacity">Capacity</a>
-      <a href="#equipment">Equipment</a>
-      <a href="#certifications">Certifications</a>
+      <a href="#about" data-i18n="n_about">About</a>
+      <a href="#advantages" data-i18n="n_adv">Advantages</a>
+      <a href="#products" data-i18n="n_prod">Products</a>
+      <a href="#capacity" data-i18n="n_cap">Capacity</a>
+      <a href="#equipment" data-i18n="n_eq">Equipment</a>
+      <a href="#certifications" data-i18n="n_cert">Certifications</a>
     </nav>
-    <a class="nav-cta" href="#contact">OEM / ODM Inquiry</a>
+    <div class="lang" id="langDesk">
+      <button data-lang="en">EN</button>
+      <button data-lang="zh">繁中</button>
+      <button data-lang="ja">日本語</button>
+      <button data-lang="vi">VI</button>
+    </div>
+    <a class="nav-cta" href="#contact" data-i18n="n_cta">OEM / ODM Inquiry</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
 </header>
 <div class="mobile-menu" id="mmenu">
-  <a href="#about">About</a>
-  <a href="#advantages">Advantages</a>
-  <a href="#products">Products</a>
-  <a href="#capacity">Capacity</a>
-  <a href="#equipment">Equipment</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact" class="m-cta">OEM / ODM Inquiry</a>
+  <div class="m-lang" id="langMob">
+    <button data-lang="en">EN</button>
+    <button data-lang="zh">繁中</button>
+    <button data-lang="ja">日本語</button>
+    <button data-lang="vi">VI</button>
+  </div>
+  <a href="#about" data-i18n="n_about">About</a>
+  <a href="#advantages" data-i18n="n_adv">Advantages</a>
+  <a href="#products" data-i18n="n_prod">Products</a>
+  <a href="#capacity" data-i18n="n_cap">Capacity</a>
+  <a href="#equipment" data-i18n="n_eq">Equipment</a>
+  <a href="#certifications" data-i18n="n_cert">Certifications</a>
+  <a href="#contact" class="m-cta" data-i18n="n_cta">OEM / ODM Inquiry</a>
 </div>
 
 <!-- HERO -->
 <section class="hero" id="top">
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="wrap">
-    <span class="eyebrow reveal">Since 2015 · Taiwan × Japan Joint Enterprise</span>
-    <h1 class="reveal d1">The Finest Weaving,<br>Crafted with <em>Distinction</em></h1>
-    <p class="lead reveal d2">SHK Weaving Technology is a leading professional weaving company founded by Taiwanese and Japanese enterprises — delivering 500+ types of premium woven tapes to the apparel, medical and industrial safety industries worldwide.</p>
+    <span class="eyebrow reveal" data-i18n="h_eyebrow">Since 2015 · Taiwan × Japan Joint Enterprise</span>
+    <h1 class="reveal d1" data-i18n="h_title">The Finest Weaving,<br>Crafted with <em>Distinction</em></h1>
+    <p class="lead reveal d2" data-i18n="h_lead">SHK Weaving Technology is a leading professional weaving company founded by Taiwanese and Japanese enterprises — delivering 500+ types of premium woven tapes to the apparel, medical and industrial safety industries worldwide.</p>
     <div class="actions reveal d3">
-      <a class="btn btn-primary" href="#products">Explore Our Products</a>
-      <a class="btn btn-ghost" href="#about">Company Profile</a>
+      <a class="btn btn-primary" href="#products" data-i18n="h_btn1">Explore Our Products</a>
+      <a class="btn btn-ghost" href="#about" data-i18n="h_btn2">Company Profile</a>
     </div>
   </div>
   <div class="scroll-hint" aria-hidden="true"></div>
@@ -280,10 +300,10 @@ footer .fl span{color:var(--brand)}
 <!-- STATS -->
 <div class="stats">
   <div class="wrap">
-    <div class="stat reveal"><b><span class="count" data-to="50000000" data-suffix="m">0m</span><sup>+</sup></b><span>Annual Production Capacity</span></div>
-    <div class="stat reveal d1"><b><span class="count" data-to="500" data-suffix="+">0+</span></b><span>Types of Woven Tape Products</span></div>
-    <div class="stat reveal d2"><b><span class="count" data-to="40" data-suffix="+">0+</span></b><span>Years of Weaving Expertise</span></div>
-    <div class="stat reveal d3"><b><span class="count" data-to="14000" data-suffix="㎡">0㎡</span></b><span>Vietnam Sewing Factory</span></div>
+    <div class="stat reveal"><b><span class="count" data-to="50000000" data-suffix="m">0m</span><sup>+</sup></b><span data-i18n="s1">Annual Production Capacity</span></div>
+    <div class="stat reveal d1"><b><span class="count" data-to="500" data-suffix="+">0+</span></b><span data-i18n="s2">Types of Woven Tape Products</span></div>
+    <div class="stat reveal d2"><b><span class="count" data-to="40" data-suffix="+">0+</span></b><span data-i18n="s3">Years of Weaving Expertise</span></div>
+    <div class="stat reveal d3"><b><span class="count" data-to="14000" data-suffix="㎡">0㎡</span></b><span data-i18n="s4">Vietnam Sewing Factory</span></div>
   </div>
 </div>
 
@@ -291,25 +311,25 @@ footer .fl span{color:var(--brand)}
 <section id="about">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="tag">Company Profile</span>
-      <h2>A Trusted Partner in the Textile Industry</h2>
+      <span class="tag" data-i18n="a_tag">Company Profile</span>
+      <h2 data-i18n="a_h2">A Trusted Partner in the Textile Industry</h2>
     </div>
     <div class="about-grid">
       <div class="txt">
-        <p class="reveal">SHK Weaving Technology Co., Ltd. is a leading professional weaving company founded by Taiwanese and Japanese enterprises. With over 40 years of expertise in weaving and production, we specialize in the manufacturing of high-quality woven tapes, serving both <strong>OEM and ODM</strong> business models to meet diverse customer needs.</p>
-        <p class="reveal d1">We offer a vast range of over 500 different types of woven tapes. Our products find extensive applications across various industries, including general apparel, medical supplies, and industrial safety solutions. With our commitment to innovation and craftsmanship, we deliver woven tapes that meet the highest standards of quality and functionality.</p>
-        <p class="reveal d2">Our rich heritage in weaving technology, coupled with our ability to adapt to evolving market demands, positions us as a trusted partner in the textile industry. We continuously strive to provide customized solutions, exceptional service, and reliable products to our valued clients.</p>
+        <p class="reveal" data-i18n="a_p1">SHK Weaving Technology Co., Ltd. is a leading professional weaving company founded by Taiwanese and Japanese enterprises. With over 40 years of expertise in weaving and production, we specialize in the manufacturing of high-quality woven tapes, serving both <strong>OEM and ODM</strong> business models to meet diverse customer needs.</p>
+        <p class="reveal d1" data-i18n="a_p2">We offer a vast range of over 500 different types of woven tapes. Our products find extensive applications across various industries, including general apparel, medical supplies, and industrial safety solutions. With our commitment to innovation and craftsmanship, we deliver woven tapes that meet the highest standards of quality and functionality.</p>
+        <p class="reveal d2" data-i18n="a_p3">Our rich heritage in weaving technology, coupled with our ability to adapt to evolving market demands, positions us as a trusted partner in the textile industry. We continuously strive to provide customized solutions, exceptional service, and reliable products to our valued clients.</p>
       </div>
       <div class="about-img reveal d2">
         <img src="factory-building.jpg" alt="SHK factory building" loading="lazy">
-        <div class="chip"><b>14,000㎡</b><span>Vietnam Sewing Factory</span></div>
+        <div class="chip"><b>14,000㎡</b><span data-i18n="a_chip">Vietnam Sewing Factory</span></div>
       </div>
     </div>
     <div class="values">
-      <div class="value reveal"><div class="ico">💡</div><b>Mindset</b></div>
-      <div class="value reveal d1"><div class="ico">🛡️</div><b>Safety</b></div>
-      <div class="value reveal d2"><div class="ico">⚖️</div><b>Fairness</b></div>
-      <div class="value reveal d3"><div class="ico">🤝</div><b>Collaboration</b></div>
+      <div class="value reveal"><div class="ico">💡</div><b data-i18n="v1">Mindset</b></div>
+      <div class="value reveal d1"><div class="ico">🛡️</div><b data-i18n="v2">Safety</b></div>
+      <div class="value reveal d2"><div class="ico">⚖️</div><b data-i18n="v3">Fairness</b></div>
+      <div class="value reveal d3"><div class="ico">🤝</div><b data-i18n="v4">Collaboration</b></div>
     </div>
   </div>
 </section>
@@ -318,19 +338,19 @@ footer .fl span{color:var(--brand)}
 <div class="position">
   <div class="wrap">
     <div class="pos reveal">
-      <b>Industry Position</b>
+      <b data-i18n="p1_tag">Industry Position</b>
       <h3>TOP 10</h3>
-      <p>Among the top 10 in the professional weaving technology industry.</p>
+      <p data-i18n="p1_p">Among the top 10 in the professional weaving technology industry.</p>
     </div>
     <div class="pos reveal d1">
-      <b>Core Business</b>
-      <h3>Weaving · Woven · Braiding</h3>
-      <p>Our core strengths lie in weaving, woven tapes and braiding — a professional ribbon manufacturer jointly established by Taiwanese and Japanese enterprises, offering OEM and ODM business models with 500+ ribbon products.</p>
+      <b data-i18n="p2_tag">Core Business</b>
+      <h3 data-i18n="p2_h">Weaving · Woven · Braiding</h3>
+      <p data-i18n="p2_p">Our core strengths lie in weaving, woven tapes and braiding — a professional ribbon manufacturer jointly established by Taiwanese and Japanese enterprises, offering OEM and ODM business models with 500+ ribbon products.</p>
     </div>
     <div class="pos reveal d2">
-      <b>Strategic Positioning</b>
-      <h3>Leading in China · Japan · Vietnam</h3>
-      <p>Leading professional rubber band manufacturing company across China, Japan and Vietnam.</p>
+      <b data-i18n="p3_tag">Strategic Positioning</b>
+      <h3 data-i18n="p3_h">Leading in China · Japan · Vietnam</h3>
+      <p data-i18n="p3_p">Leading professional rubber band manufacturing company across China, Japan and Vietnam.</p>
     </div>
   </div>
 </div>
@@ -339,25 +359,25 @@ footer .fl span{color:var(--brand)}
 <section id="advantages" class="alt">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="tag">Why SHK</span>
-      <h2>Four Distinct Advantages that Condense the Professionalism of the Ribbon Industry</h2>
+      <span class="tag" data-i18n="adv_tag">Why SHK</span>
+      <h2 data-i18n="adv_h2">Four Distinct Advantages that Condense the Professionalism of the Ribbon Industry</h2>
     </div>
     <div class="adv-grid">
       <div class="adv reveal"><span class="num">01</span>
-        <h3>Customer Service</h3>
-        <p>Providing exceptional customer service is the key to earning trust and reputation. We uphold this philosophy throughout the entire process — from order placement to final delivery — to promote sales growth and long-term business development.</p>
+        <h3 data-i18n="ad1_h">Customer Service</h3>
+        <p data-i18n="ad1_p">Providing exceptional customer service is the key to earning trust and reputation. We uphold this philosophy throughout the entire process — from order placement to final delivery — to promote sales growth and long-term business development.</p>
       </div>
       <div class="adv reveal d1"><span class="num">02</span>
-        <h3>Innovative Development</h3>
-        <p>Catering to both OEM and ODM business models with over 40 years of experience, we continuously strive for innovative development. Our portfolio of 500+ ribbon types serves the apparel, medical and industrial safety industries.</p>
+        <h3 data-i18n="ad2_h">Innovative Development</h3>
+        <p data-i18n="ad2_p">Catering to both OEM and ODM business models with over 40 years of experience, we continuously strive for innovative development. Our portfolio of 500+ ribbon types serves the apparel, medical and industrial safety industries.</p>
       </div>
       <div class="adv reveal d2"><span class="num">03</span>
-        <h3>Quality Requirements</h3>
-        <p>We have maintained deep collaboration and long-term supply to the Japanese market, adhering to 100% strict Japanese quality standards to ensure every meter of our products meets the requirements.</p>
+        <h3 data-i18n="ad3_h">Quality Requirements</h3>
+        <p data-i18n="ad3_p">We have maintained deep collaboration and long-term supply to the Japanese market, adhering to 100% strict Japanese quality standards to ensure every meter of our products meets the requirements.</p>
       </div>
       <div class="adv reveal d3"><span class="num">04</span>
-        <h3>Cost-Effectiveness</h3>
-        <p>We always adhere to comprehensive, high-quality production control — aiming to achieve the most competitive price advantage while maintaining the same level of quality.</p>
+        <h3 data-i18n="ad4_h">Cost-Effectiveness</h3>
+        <p data-i18n="ad4_p">We always adhere to comprehensive, high-quality production control — aiming to achieve the most competitive price advantage while maintaining the same level of quality.</p>
       </div>
     </div>
   </div>
@@ -367,17 +387,17 @@ footer .fl span{color:var(--brand)}
 <section id="fields">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <span class="tag">Main Fields</span>
-      <h2>Applications Across Every Industry</h2>
-      <p>From sports waist belts and rehabilitation supports to mask cords and apparel weaving tapes — our products serve six major fields.</p>
+      <span class="tag" data-i18n="f_tag">Main Fields</span>
+      <h2 data-i18n="f_h2">Applications Across Every Industry</h2>
+      <p data-i18n="f_p">From sports waist belts and rehabilitation supports to mask cords and apparel weaving tapes — our products serve six major fields.</p>
     </div>
     <div class="fields">
-      <div class="field reveal"><img src="field-medical.jpg" alt="Medical field" loading="lazy"><span>Medical</span></div>
-      <div class="field reveal d1"><img src="field-sanitary.jpg" alt="Sanitary field" loading="lazy"><span>Sanitary</span></div>
-      <div class="field reveal d2"><img src="field-apparel.jpg" alt="Apparel field" loading="lazy"><span>Apparel</span></div>
-      <div class="field reveal d3"><img src="field-industrial.jpg" alt="Industrial field" loading="lazy"><span>Industrial</span></div>
-      <div class="field reveal d4"><img src="field-sports.jpg" alt="Sports field" loading="lazy"><span>Sports</span></div>
-      <div class="field reveal d5"><img src="field-daily.jpg" alt="Daily necessities" loading="lazy"><span>Daily Necessities</span></div>
+      <div class="field reveal"><img src="field-medical.jpg" alt="Medical field" loading="lazy"><span data-i18n="f1">Medical</span></div>
+      <div class="field reveal d1"><img src="field-sanitary.jpg" alt="Sanitary field" loading="lazy"><span data-i18n="f2">Sanitary</span></div>
+      <div class="field reveal d2"><img src="field-apparel.jpg" alt="Apparel field" loading="lazy"><span data-i18n="f3">Apparel</span></div>
+      <div class="field reveal d3"><img src="field-industrial.jpg" alt="Industrial field" loading="lazy"><span data-i18n="f4">Industrial</span></div>
+      <div class="field reveal d4"><img src="field-sports.jpg" alt="Sports field" loading="lazy"><span data-i18n="f5">Sports</span></div>
+      <div class="field reveal d5"><img src="field-daily.jpg" alt="Daily necessities" loading="lazy"><span data-i18n="f6">Daily Necessities</span></div>
     </div>
   </div>
 </section>
@@ -386,35 +406,35 @@ footer .fl span{color:var(--brand)}
 <section id="products" class="alt">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="tag">Product Details</span>
-      <h2>500+ Types of Woven Tapes &amp; Ribbons</h2>
-      <p>A complete portfolio covering elastic bands, ribbons, jacquard, shoelaces, straps, cords, belts and threads — all customizable through OEM / ODM.</p>
+      <span class="tag" data-i18n="pr_tag">Product Details</span>
+      <h2 data-i18n="pr_h2">500+ Types of Woven Tapes &amp; Ribbons</h2>
+      <p data-i18n="pr_p">A complete portfolio covering elastic bands, ribbons, jacquard, shoelaces, straps, cords, belts and threads — all customizable through OEM / ODM.</p>
     </div>
     <div class="prod-grid">
       <div class="prod reveal"><div class="ph"><img src="prod-elastic-bands.jpg" alt="Elastic bands" loading="lazy"></div>
-        <div class="bd"><h3>Elastic Bands</h3><p>Ideal for underwear, pants, baby clothes, sweaters, sportswear, wedding gowns, T-shirts, hats, bras and masks — widely used in cuffs, hems, waistbands, stockings, and sports &amp; medical applications.</p></div></div>
+        <div class="bd"><h3 data-i18n="pr1_h">Elastic Bands</h3><p data-i18n="pr1_p">Ideal for underwear, pants, baby clothes, sweaters, sportswear, wedding gowns, T-shirts, hats, bras and masks — widely used in cuffs, hems, waistbands, stockings, and sports &amp; medical applications.</p></div></div>
       <div class="prod reveal d1"><div class="ph"><img src="prod-ribbons.jpg" alt="Ribbons" loading="lazy"></div>
-        <div class="bd"><h3>Ribbons</h3><p>Suitable for climbing &amp; camping safety belts, backpack straps, tents, personal protective equipment, fitness gear, pet leashes and collars, military / police / fire safety belts, luggage straps and more.</p></div></div>
+        <div class="bd"><h3 data-i18n="pr2_h">Ribbons</h3><p data-i18n="pr2_p">Suitable for climbing &amp; camping safety belts, backpack straps, tents, personal protective equipment, fitness gear, pet leashes and collars, military / police / fire safety belts, luggage straps and more.</p></div></div>
       <div class="prod reveal d2"><div class="ph"><img src="prod-jacquard.jpg" alt="Jacquard ribbons" loading="lazy"></div>
-        <div class="bd"><h3>Jacquard Ribbons</h3><p>Crafted from polyester, nylon, PP and acrylic — featuring intricate patterns, smooth texture, excellent strength, durability, colorfastness and shape retention.</p></div></div>
-      <div class="prod reveal"><div class="ph"><img src="prod-shoelaces.jpg" alt="Shoelaces" loading="lazy"></div>
-        <div class="bd"><h3>Shoelaces</h3><p>Fasten shoes, decorate uppers, adjust tightness and protect the ankle — providing ample space for healthy foot development, especially for growing youth.</p></div></div>
-      <div class="prod reveal d1"><div class="ph"><img src="prod-nylon.jpg?v=2" alt="Nylon straps" loading="lazy"></div>
-        <div class="bd"><h3>Nylon Straps</h3><p>Widely used in fashion, home textiles, footwear, gift packaging, luggage, decorations, pendant cords, pet supplies, curtains, headphone cords, eco-bags, automotive accessories, DIY crafts and more.</p></div></div>
-      <div class="prod reveal d2"><div class="ph"><img src="prod-pp.jpg" alt="PP straps" loading="lazy"></div>
-        <div class="bd"><h3>PP Straps</h3><p>Polypropylene yarns with excellent plasticity, strong tensile strength, fatigue resistance, low density and good impact performance — versatile across many fields.</p></div></div>
-      <div class="prod reveal"><div class="ph"><img src="prod-elastic-rope.jpg" alt="Elastic ropes" loading="lazy"></div>
-        <div class="bd"><h3>Elastic Ropes</h3><p>A wide range of applications including clothing, construction, transportation equipment, bundling, sports equipment and more.</p></div></div>
-      <div class="prod reveal d1"><div class="ph"><img src="prod-pet-leash.jpg" alt="Pet leash" loading="lazy"></div>
-        <div class="bd"><h3>Pet Leash</h3><p>Nylon construction with vibrant colors and excellent texture. Custom specifications, jacquard patterns, heat-transfer printing and softening treatments — assembled to finished leashes on request.</p></div></div>
-      <div class="prod reveal d2"><div class="ph"><img src="prod-poly-belt.jpg" alt="POLY belt" loading="lazy"></div>
-        <div class="bd"><h3>POLY Belt</h3><p>Polymer belt materials (polyamide, polyester, polyurethane, polyether) for packaging, transportation, construction, medical and manufacturing — high strength, abrasion, corrosion and temperature resistant.</p></div></div>
-      <div class="prod reveal"><div class="ph"><img src="prod-sp-thread.jpg" alt="SP thread" loading="lazy"></div>
-        <div class="bd"><h3>SP Thread</h3><p>Twisted polyester sewing thread with superior tensile strength, luster and abrasion resistance — soft, colorfast, aging- and seawater-resistant with excellent elasticity.</p></div></div>
-      <div class="prod reveal d1"><div class="ph"><img src="prod-sports-belt.jpg" alt="Sports waist belt" loading="lazy"></div>
-        <div class="bd"><h3>Sports &amp; Rehabilitation Waist Belts</h3><p>Supportive woven waist belts for sports performance and medical rehabilitation applications.</p></div></div>
-      <div class="prod reveal d2"><div class="ph"><img src="prod-mask-cord.jpg" alt="Mask cord" loading="lazy"></div>
-        <div class="bd"><h3>Mask Cord</h3><p>Soft, skin-friendly elastic cords engineered for medical and sanitary mask applications.</p></div></div>
+        <div class="bd"><h3 data-i18n="pr3_h">Jacquard Ribbons</h3><p data-i18n="pr3_p">Crafted from polyester, nylon, PP and acrylic — featuring intricate patterns, smooth texture, excellent strength, durability, colorfastness and shape retention.</p></div></div>
+      <div class="prod reveal d3"><div class="ph"><img src="prod-shoelaces.jpg" alt="Shoelaces" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr4_h">Shoelaces</h3><p data-i18n="pr4_p">Fasten shoes, decorate uppers, adjust tightness and protect the ankle — providing ample space for healthy foot development, especially for growing youth.</p></div></div>
+      <div class="prod reveal"><div class="ph"><img src="prod-nylon.jpg?v=2" alt="Nylon straps" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr5_h">Nylon Straps</h3><p data-i18n="pr5_p">Widely used in fashion, home textiles, footwear, gift packaging, luggage, decorations, pendant cords, pet supplies, curtains, headphone cords, eco-bags, automotive accessories, DIY crafts and more.</p></div></div>
+      <div class="prod reveal d1"><div class="ph"><img src="prod-pp.jpg" alt="PP straps" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr6_h">PP Straps</h3><p data-i18n="pr6_p">Polypropylene yarns with excellent plasticity, strong tensile strength, fatigue resistance, low density and good impact performance — versatile across many fields.</p></div></div>
+      <div class="prod reveal d2"><div class="ph"><img src="prod-elastic-rope.jpg" alt="Elastic ropes" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr7_h">Elastic Ropes</h3><p data-i18n="pr7_p">A wide range of applications including clothing, construction, transportation equipment, bundling, sports equipment and more.</p></div></div>
+      <div class="prod reveal d3"><div class="ph"><img src="prod-pet-leash.jpg" alt="Pet leash" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr8_h">Pet Leash</h3><p data-i18n="pr8_p">Nylon construction with vibrant colors and excellent texture. Custom specifications, jacquard patterns, heat-transfer printing and softening treatments — assembled to finished leashes on request.</p></div></div>
+      <div class="prod reveal"><div class="ph"><img src="prod-poly-belt.jpg" alt="POLY belt" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr9_h">POLY Belt</h3><p data-i18n="pr9_p">Polymer belt materials (polyamide, polyester, polyurethane, polyether) for packaging, transportation, construction, medical and manufacturing — high strength, abrasion, corrosion and temperature resistant.</p></div></div>
+      <div class="prod reveal d1"><div class="ph"><img src="prod-sp-thread.jpg" alt="SP thread" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr10_h">SP Thread</h3><p data-i18n="pr10_p">Twisted polyester sewing thread with superior tensile strength, luster and abrasion resistance — soft, colorfast, aging- and seawater-resistant with excellent elasticity.</p></div></div>
+      <div class="prod reveal d2"><div class="ph"><img src="prod-sports-belt.jpg" alt="Sports waist belt" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr11_h">Sports &amp; Rehabilitation Waist Belts</h3><p data-i18n="pr11_p">Supportive woven waist belts for sports performance and medical rehabilitation applications.</p></div></div>
+      <div class="prod reveal d3"><div class="ph"><img src="prod-mask-cord.jpg" alt="Mask cord" loading="lazy"></div>
+        <div class="bd"><h3 data-i18n="pr12_h">Mask Cord</h3><p data-i18n="pr12_p">Soft, skin-friendly elastic cords engineered for medical and sanitary mask applications.</p></div></div>
     </div>
   </div>
 </section>
@@ -423,26 +443,26 @@ footer .fl span{color:var(--brand)}
 <section id="capacity">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="tag">Plant Capacity</span>
-      <h2>Annual Production Capacity of Three Major Products</h2>
+      <span class="tag" data-i18n="c_tag">Plant Capacity</span>
+      <h2 data-i18n="c_h2">Annual Production Capacity of Three Major Products</h2>
     </div>
     <div class="cap-grid">
       <div class="cap-big reveal">
         <b>50,000K<sup>+</sup></b>
-        <span>meters per year — total capacity</span>
-        <p>In 2020, our company's annual production capacity for the three major ribbon categories exceeded 50,000,000 meters, supported by our 14,000㎡ sewing factory in Vietnam.</p>
+        <span data-i18n="c_unit">meters per year — total capacity</span>
+        <p data-i18n="c_p">In 2020, our company's annual production capacity for the three major ribbon categories exceeded 50,000,000 meters, supported by our 14,000㎡ sewing factory in Vietnam.</p>
       </div>
       <div class="bars reveal d1" id="bars">
         <div class="bar">
-          <label><span>Elastic Cord</span><span>25,000,000 m / year</span></label>
+          <label><span data-i18n="b1">Elastic Cord</span><span data-i18n="bv1">25,000,000 m / year</span></label>
           <div class="track"><div class="fill" data-w="100%"></div></div>
         </div>
         <div class="bar">
-          <label><span>Weaving Tape</span><span>23,000,000 m / year</span></label>
+          <label><span data-i18n="b2">Weaving Tape</span><span data-i18n="bv2">23,000,000 m / year</span></label>
           <div class="track"><div class="fill" data-w="92%"></div></div>
         </div>
         <div class="bar">
-          <label><span>Narrow Woven Tapes</span><span>4,500,000 m / year</span></label>
+          <label><span data-i18n="b3">Narrow Woven Tapes</span><span data-i18n="bv3">4,500,000 m / year</span></label>
           <div class="track"><div class="fill" data-w="18%"></div></div>
         </div>
       </div>
@@ -454,22 +474,22 @@ footer .fl span{color:var(--brand)}
 <section id="equipment" class="alt">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="tag">Main Equipment</span>
-      <h2>Advanced Machinery, Uncompromising Efficiency</h2>
+      <span class="tag" data-i18n="e_tag">Main Equipment</span>
+      <h2 data-i18n="e_h2">Advanced Machinery, Uncompromising Efficiency</h2>
     </div>
     <div class="eq-grid">
       <div class="eq reveal"><img src="machine-crochet.jpg" alt="Crochet machines" loading="lazy">
-        <div class="ov"><h3>Crochet Machines</h3><span class="cap">Capacity 150,000 m / day</span>
-        <p>Producing crochet fabrics for handicrafts, clothing and home textiles — improving fabric efficiency and quality while expanding design and innovation possibilities.</p></div></div>
+        <div class="ov"><h3 data-i18n="e1_h">Crochet Machines</h3><span class="cap" data-i18n="e1_c">Capacity 150,000 m / day</span>
+        <p data-i18n="e1_p">Producing crochet fabrics for handicrafts, clothing and home textiles — improving fabric efficiency and quality while expanding design and innovation possibilities.</p></div></div>
       <div class="eq reveal d1"><img src="machine-needle.jpg" alt="High-speed needle machines" loading="lazy">
-        <div class="ov"><h3>High-Speed Needle Machines</h3><span class="cap">Capacity 200,000 m / day</span>
-        <p>Fast ribbon weaving with high automation, compact size, low noise, easy maintenance and high production efficiency — the ideal upgrade from traditional shuttle looms.</p></div></div>
+        <div class="ov"><h3 data-i18n="e2_h">High-Speed Needle Machines</h3><span class="cap" data-i18n="e2_c">Capacity 200,000 m / day</span>
+        <p data-i18n="e2_p">Fast ribbon weaving with high automation, compact size, low noise, easy maintenance and high production efficiency — the ideal upgrade from traditional shuttle looms.</p></div></div>
       <div class="eq reveal"><img src="machine-braiding.jpg" alt="Braiding machines" loading="lazy">
-        <div class="ov"><h3>Braiding Machines</h3><span class="cap">Capacity 47,000 m / day</span>
-        <p>Greatly increased production efficiency — 4–5× faster than low-speed looms, user-friendly and cost-effective.</p></div></div>
+        <div class="ov"><h3 data-i18n="e3_h">Braiding Machines</h3><span class="cap" data-i18n="e3_c">Capacity 47,000 m / day</span>
+        <p data-i18n="e3_p">Greatly increased production efficiency — 4–5× faster than low-speed looms, user-friendly and cost-effective.</p></div></div>
       <div class="eq reveal d1"><img src="machine-jacquard.jpg" alt="Jacquard machines" loading="lazy">
-        <div class="ov"><h3>Jacquard Machines</h3><span class="cap">Capacity 12,000 m / day</span>
-        <p>Computer-controlled looms producing intricate patterned fabrics — achieving complex designs while enhancing fabric efficiency and quality.</p></div></div>
+        <div class="ov"><h3 data-i18n="e4_h">Jacquard Machines</h3><span class="cap" data-i18n="e4_c">Capacity 12,000 m / day</span>
+        <p data-i18n="e4_p">Computer-controlled looms producing intricate patterned fabrics — achieving complex designs while enhancing fabric efficiency and quality.</p></div></div>
     </div>
   </div>
 </section>
@@ -478,17 +498,17 @@ footer .fl span{color:var(--brand)}
 <section id="certifications">
   <div class="wrap">
     <div class="sec-head center reveal">
-      <span class="tag">The Himalayas of the Weaving Industry</span>
-      <h2>Company Certifications</h2>
-      <p>Six authoritative certifications — the highest level of trust and recognition given to SHK.</p>
+      <span class="tag" data-i18n="ct_tag">The Himalayas of the Weaving Industry</span>
+      <h2 data-i18n="ct_h2">Company Certifications</h2>
+      <p data-i18n="ct_p">Six authoritative certifications — the highest level of trust and recognition given to SHK.</p>
     </div>
     <div class="cert-grid">
-      <div class="cert reveal"><div class="ph"><img src="cert-iso9001.jpg" alt="ISO 9001" loading="lazy"></div><span>ISO 9001 Quality Management System</span></div>
-      <div class="cert reveal d1"><div class="ph"><img src="cert-iso45001.jpg" alt="ISO 45001" loading="lazy"></div><span>ISO 45001 Occupational Health &amp; Safety</span></div>
-      <div class="cert reveal d2"><div class="ph"><img src="cert-iso14001.jpg" alt="ISO 14001" loading="lazy"></div><span>ISO 14001 Environmental Management</span></div>
-      <div class="cert reveal d3"><div class="ph"><img src="cert-oekotex.jpg" alt="OEKO-TEX Standard 100" loading="lazy"></div><span>European Standard Level 1 Safety (Baby Grade)</span></div>
-      <div class="cert reveal d4"><div class="ph"><img src="cert-sgs.jpg" alt="SGS" loading="lazy"></div><span>Internationally Recognized Testing Certification</span></div>
-      <div class="cert reveal d5"><div class="ph"><img src="cert-csr.jpg" alt="CSR" loading="lazy"></div><span>CSR Social Responsibility Management System</span></div>
+      <div class="cert reveal"><div class="ph"><img src="cert-iso9001.jpg" alt="ISO 9001" loading="lazy"></div><span data-i18n="ct1">ISO 9001 Quality Management System</span></div>
+      <div class="cert reveal d1"><div class="ph"><img src="cert-iso45001.jpg" alt="ISO 45001" loading="lazy"></div><span data-i18n="ct2">ISO 45001 Occupational Health &amp; Safety</span></div>
+      <div class="cert reveal d2"><div class="ph"><img src="cert-iso14001.jpg" alt="ISO 14001" loading="lazy"></div><span data-i18n="ct3">ISO 14001 Environmental Management</span></div>
+      <div class="cert reveal d3"><div class="ph"><img src="cert-oekotex.jpg" alt="OEKO-TEX Standard 100" loading="lazy"></div><span data-i18n="ct4">European Standard Level 1 Safety (Baby Grade)</span></div>
+      <div class="cert reveal d4"><div class="ph"><img src="cert-sgs.jpg" alt="SGS" loading="lazy"></div><span data-i18n="ct5">Internationally Recognized Testing Certification</span></div>
+      <div class="cert reveal d5"><div class="ph"><img src="cert-csr.jpg" alt="CSR" loading="lazy"></div><span data-i18n="ct6">CSR Social Responsibility Management System</span></div>
     </div>
   </div>
 </section>
@@ -497,16 +517,16 @@ footer .fl span{color:var(--brand)}
 <section class="contact" id="contact" style="padding:0">
   <div class="wrap">
     <div class="reveal">
-      <h2>Excellent Quality,<br><em>Satisfying Service.</em></h2>
-      <p>Join us at SHK Weaving Technology and experience the art of weaving combined with uncompromising quality for your business success. We welcome OEM and ODM inquiries worldwide.</p>
+      <h2 data-i18n="co_h">Excellent Quality,<br><em>Satisfying Service.</em></h2>
+      <p data-i18n="co_p">Join us at SHK Weaving Technology and experience the art of weaving combined with uncompromising quality for your business success. We welcome OEM and ODM inquiries worldwide.</p>
     </div>
     <div class="card reveal d1">
-      <h3>Get in Touch</h3>
-      <div class="row"><b>Company</b>SHK Weaving Technology Co., LTD</div>
-      <div class="row"><b>Business Model</b>OEM / ODM woven tape manufacturing</div>
-      <div class="row"><b>Factories</b>China · Japan · Vietnam (14,000㎡ sewing factory)</div>
+      <h3 data-i18n="co_card">Get in Touch</h3>
+      <div class="row"><b data-i18n="co_l1">Company</b><span data-i18n="co_v1">SHK Weaving Technology Co., LTD</span></div>
+      <div class="row"><b data-i18n="co_l2">Business Model</b><span data-i18n="co_v2">OEM / ODM woven tape manufacturing</span></div>
+      <div class="row"><b data-i18n="co_l3">Factories</b><span data-i18n="co_v3">China · Japan · Vietnam (14,000㎡ sewing factory)</span></div>
       <div class="row"><b>Email</b><a href="mailto:nt.doan@shk-vn.com" style="color:#fff;text-decoration:underline">nt.doan@shk-vn.com</a></div>
-      <div class="row"><b>Phone</b><a href="tel:+84663534199" style="color:#fff">+84 66 353 4199</a></div>
+      <div class="row"><b data-i18n="co_l5">Phone</b><a href="tel:+84663534199" style="color:#fff">+84 66 353 4199</a></div>
     </div>
   </div>
 </section>
@@ -514,20 +534,214 @@ footer .fl span{color:var(--brand)}
 <footer>
   <div class="wrap">
     <div class="fl"><span>SHK</span> Weaving Technology Co., LTD</div>
-    <div>The Finest Weaving, Crafted with Distinction · © 2026 SHK Weaving Technology Co., LTD</div>
+    <div data-i18n="ft">The Finest Weaving, Crafted with Distinction · © 2026 SHK Weaving Technology Co., LTD</div>
   </div>
 </footer>
 
 <button id="toTop" aria-label="Back to top">↑</button>
 
 <script>
+/* ===================== i18n ===================== */
+var I18N = {
+zh:{
+_title:"SHK 織帶科技股份有限公司 — 極致織造・非凡工藝",
+n_about:"關於我們",n_adv:"企業優勢",n_prod:"產品介紹",n_cap:"產能",n_eq:"主要設備",n_cert:"公司認證",n_cta:"OEM / ODM 洽詢",
+h_eyebrow:"創立於 2015 · 台日合資企業",
+h_title:"極致織造,<br><em>非凡工藝</em>",
+h_lead:"SHK 織帶科技是由台灣與日本企業共同創立的專業織造公司,提供 500 多種高品質織帶,服務全球服飾、醫療與工業安全產業。",
+h_btn1:"探索產品",h_btn2:"公司簡介",
+s1:"年產能(米)",s2:"織帶產品種類",s3:"年以上織造經驗",s4:"越南縫製工廠",
+a_tag:"公司簡介",a_h2:"紡織產業值得信賴的合作夥伴",
+a_p1:"SHK 織帶科技股份有限公司是由台灣與日本企業共同創立的專業織造公司。憑藉 40 多年的織造與生產經驗,我們專精於高品質織帶製造,同時提供 <strong>OEM 與 ODM</strong> 服務模式,滿足客戶多元需求。",
+a_p2:"我們提供超過 500 種不同類型的織帶產品,廣泛應用於服飾、醫療用品與工業安全等各大產業。秉持創新與工藝的堅持,我們生產的織帶符合最高品質與功能標準。",
+a_p3:"深厚的織造技術底蘊,加上因應市場變化的靈活能力,使我們成為紡織產業值得信賴的合作夥伴。我們持續致力於提供客製化解決方案、卓越服務與可靠產品。",
+a_chip:"越南縫製工廠",
+v1:"理念",v2:"安全",v3:"公平",v4:"協作",
+p1_tag:"產業地位",p1_p:"專業織造技術產業前十強。",
+p2_tag:"核心業務",p2_h:"織造 · 織帶 · 編織",p2_p:"我們的核心強項為織造、織帶與編織 — 由台灣與日本企業合資成立的專業織帶製造商,提供 OEM 與 ODM 服務模式,擁有 500 多種織帶產品。",
+p3_tag:"戰略佈局",p3_h:"領先中國 · 日本 · 越南",p3_p:"橫跨中國、日本與越南的領先專業鬆緊帶製造企業。",
+adv_tag:"為什麼選擇 SHK",adv_h2:"凝聚織帶產業專業的四大優勢",
+ad1_h:"客戶服務",ad1_p:"卓越的客戶服務是贏得信任與口碑的關鍵。從下單到交貨,我們全程堅持這一理念,促進業績成長與長期業務發展。",
+ad2_h:"創新開發",ad2_p:"同時經營 OEM 與 ODM 模式,擁有 40 多年經驗,持續致力創新開發。500 多種織帶產品服務於服飾、醫療與工業安全產業。",
+ad3_h:"品質要求",ad3_p:"長期深度合作並供應日本市場,恪守 100% 嚴格的日本品質標準,確保每一米產品都符合要求。",
+ad4_h:"成本效益",ad4_p:"始終堅持全面的高品質生產管控,在維持同等品質的前提下,實現最具競爭力的價格優勢。",
+f_tag:"主要應用領域",f_h2:"跨產業廣泛應用",f_p:"從運動護腰、復健輔具到口罩繩與服飾織帶 — 我們的產品服務六大領域。",
+f1:"醫療",f2:"衛生",f3:"服飾",f4:"工業",f5:"運動",f6:"日用品",
+pr_tag:"產品細節",pr_h2:"500+ 種織帶產品",pr_p:"完整產品線涵蓋鬆緊帶、織帶、提花帶、鞋帶、背帶、繩帶、皮帶與縫線 — 皆可透過 OEM / ODM 客製化。",
+pr1_h:"鬆緊帶",pr1_p:"適用於內衣、褲裝、嬰兒服、毛衣、運動服、婚紗、T恤、帽子、內衣與口罩 — 廣泛用於袖口、下擺、腰帶、絲襪,以及運動與醫療用途。",
+pr2_h:"織帶",pr2_p:"適用於登山露營安全帶、背包帶、帳篷、個人防護裝備、健身器材、寵物牽繩與項圈、軍警消防安全帶、行李帶等。",
+pr3_h:"提花織帶",pr3_p:"採用聚酯纖維、尼龍、PP 與壓克力纖維製成 — 圖案精緻、質地光滑、強度優異、耐用、色牢度佳且不易變形。",
+pr4_h:"鞋帶",pr4_p:"繫緊鞋子、裝飾鞋面、調整鬆緊、保護腳踝 — 為腳部健康發育保留充足空間,特別適合成長中的青少年。",
+pr5_h:"尼龍帶",pr5_p:"廣泛用於時裝、家紡、鞋類、禮品包裝、行李箱、裝飾、吊繩、寵物用品、窗簾、耳機線、環保袋、汽車配件、DIY 手作等。",
+pr6_h:"PP 帶",pr6_p:"聚丙烯紗線,可塑性佳、抗拉強度高、耐疲勞、密度低、抗衝擊性能好 — 應用領域廣泛。",
+pr7_h:"彈力繩",pr7_p:"應用範圍廣泛,包括服裝、建築、運輸設備、捆綁、運動器材等。",
+pr8_h:"寵物牽繩",pr8_p:"尼龍材質,色彩鮮豔、質感優異。可依寵物特性客製規格與顏色,支援特殊色、提花圖案、熱轉印與柔軟處理,並可加工組裝為成品牽繩。",
+pr9_h:"POLY 帶",pr9_p:"以聚醯胺、聚酯、聚氨酯、聚醚等高分子材料製成的帶狀材料,廣泛用於包裝、運輸、建築、醫療與製造業 — 具備高強度、耐磨、耐腐蝕、耐高低溫等優點。",
+pr10_h:"SP 縫線",pr10_p:"以聚酯短纖維捻製而成的常用縫紉線,拉伸強度、光澤與耐磨性優於其他縫線 — 質地柔軟、色牢度佳、耐老化、耐海水侵蝕,彈性優異。",
+pr11_h:"運動 &amp; 復健護腰",pr11_p:"支撐型織造護腰,適用於運動表現與醫療復健用途。",
+pr12_h:"口罩繩",pr12_p:"柔軟親膚的彈性繩,專為醫療與衛生口罩應用設計。",
+c_tag:"工廠產能",c_h2:"三大類產品年產能",c_unit:"米/年 — 總產能",
+c_p:"2020 年,本公司三大類織帶產品年產能突破 5,000 萬米,由越南 14,000 平方米縫製工廠強力支援。",
+b1:"彈力繩",bv1:"25,000,000 米/年",b2:"織帶",bv2:"23,000,000 米/年",b3:"窄幅織帶",bv3:"4,500,000 米/年",
+e_tag:"主要設備",e_h2:"先進機械設備,極致生產效率",
+e1_h:"鉤編機",e1_c:"日產能 150,000 米",e1_p:"生產用於手工藝品、服裝與家紡的鉤編織物 — 提升織物效率與品質,拓展設計與創新的可能性。",
+e2_h:"高速針織機",e2_c:"日產能 200,000 米",e2_p:"織帶速度快、自動化程度高、體積小、噪音低、易保養、操作簡單、生產效率高 — 是傳統梭織機升級的理想選擇。",
+e3_h:"編織機",e3_c:"日產能 47,000 米",e3_p:"大幅提升生產效率 — 比低速織機快 4–5 倍,操作簡便且具成本效益。",
+e4_h:"提花機",e4_c:"日產能 12,000 米",e4_p:"電腦控制的提花織機,生產精緻圖案織物 — 實現複雜設計,同時提升織物效率與品質。",
+ct_tag:"織造產業的喜馬拉雅",ct_h2:"公司認證",ct_p:"六項權威認證 — 給予 SHK 最高等級的信任與肯定。",
+ct1:"ISO 9001 品質管理系統認證",ct2:"ISO 45001 職業健康安全管理系統認證",ct3:"ISO 14001 環境管理系統認證",ct4:"歐洲標準一級安全認證(嬰兒級)",ct5:"國際公認檢測認證",ct6:"CSR 社會責任管理體系認證",
+co_h:"卓越品質,<br><em>滿意服務。</em>",
+co_p:"加入 SHK 織帶科技,體驗織造工藝與極致品質的完美結合,成就您的事業。歡迎全球 OEM 與 ODM 洽詢。",
+co_card:"聯絡我們",co_l1:"公司",co_v1:"SHK 織帶科技股份有限公司",co_l2:"營運模式",co_v2:"OEM / ODM 織帶製造",co_l3:"工廠",co_v3:"中國 · 日本 · 越南(14,000㎡ 縫製工廠)",co_l5:"電話",
+ft:"極致織造・非凡工藝 · © 2026 SHK 織帶科技股份有限公司"
+},
+ja:{
+_title:"SHK ウィービングテクノロジー — 最高の織りを、卓越の技で",
+n_about:"会社概要",n_adv:"私たちの強み",n_prod:"製品紹介",n_cap:"生産能力",n_eq:"主要設備",n_cert:"認証",n_cta:"OEM / ODM お問い合わせ",
+h_eyebrow:"2015年創業 · 台湾 × 日本 合弁企業",
+h_title:"最高の織りを、<br><em>卓越の技で</em>",
+h_lead:"SHKは台湾と日本の企業により設立された専門織物メーカーです。500種類以上の高品質な織りテープを、アパレル・医療・産業安全分野へ世界中にお届けしています。",
+h_btn1:"製品を見る",h_btn2:"会社概要",
+s1:"年間生産能力(m)",s2:"織りテープ製品数",s3:"年以上の織物経験",s4:"ベトナム縫製工場",
+a_tag:"会社概要",a_h2:"繊維業界の信頼できるパートナー",
+a_p1:"SHKウィービングテクノロジーは、台湾と日本の企業が共同設立した専門織物メーカーです。40年以上の織物・生産の経験を活かし、高品質な織りテープの製造を専門とし、<strong>OEM・ODM</strong>両方のビジネスモデルで多様なニーズにお応えします。",
+a_p2:"500種類以上の織りテープを取り揃え、アパレル、医療用品、産業安全ソリューションなど幅広い業界でご使用いただいています。革新と職人技へのこだわりで、最高水準の品質と機能性を備えた織りテープをお届けします。",
+a_p3:"豊かな織物技術の伝統と市場の変化に対応する柔軟性により、繊維業界の信頼できるパートナーとして、カスタマイズソリューション、優れたサービス、信頼性の高い製品を提供し続けています。",
+a_chip:"ベトナム縫製工場",
+v1:"理念",v2:"安全",v3:"公平",v4:"協働",
+p1_tag:"業界での地位",p1_p:"専門織物技術業界トップ10。",
+p2_tag:"コア事業",p2_h:"製織 · 織りテープ · 編組",p2_p:"製織・織りテープ・編組を核とする、台湾と日本の合弁による専門リボンメーカー。OEM・ODMに対応し、500種類以上のリボン製品を展開しています。",
+p3_tag:"戦略的ポジション",p3_h:"中国 · 日本 · ベトナムをリード",p3_p:"中国・日本・ベトナムにまたがる、業界をリードするゴムバンド専門メーカー。",
+adv_tag:"SHKが選ばれる理由",adv_h2:"リボン産業の専門性を凝縮した4つの強み",
+ad1_h:"カスタマーサービス",ad1_p:"優れたカスタマーサービスこそ、信頼と評価を得る鍵です。受注から納品まで一貫してこの理念を貫き、売上の成長と長期的なビジネスの発展を支えます。",
+ad2_h:"革新的な開発",ad2_p:"OEM・ODM両モデルに対応し、40年以上の経験をもとに絶えず革新的な開発に取り組んでいます。500種類以上のリボン製品でアパレル・医療・産業安全業界に貢献します。",
+ad3_h:"品質基準",ad3_p:"日本市場との深い協力関係と長期供給を維持し、100%厳格な日本品質基準を遵守。製品1メートルごとの品質を保証します。",
+ad4_h:"コストパフォーマンス",ad4_p:"徹底した高品質の生産管理を貫き、同等の品質を維持しながら、最も競争力のある価格優位性を実現します。",
+f_tag:"主要分野",f_h2:"あらゆる産業への応用",f_p:"スポーツ腰ベルトやリハビリサポーターからマスクコード、アパレル用織りテープまで — 6つの主要分野で活躍しています。",
+f1:"医療",f2:"衛生",f3:"アパレル",f4:"産業",f5:"スポーツ",f6:"日用品",
+pr_tag:"製品詳細",pr_h2:"500種類以上の織りテープ&amp;リボン",pr_p:"ゴムバンド、リボン、ジャカード、靴ひも、ストラップ、コード、ベルト、糸まで — すべてOEM / ODMでカスタマイズ可能です。",
+pr1_h:"ゴムバンド",pr1_p:"下着、パンツ、ベビー服、セーター、スポーツウェア、ウェディングドレス、Tシャツ、帽子、ブラジャー、マスクに最適 — 袖口、裾、ウエストバンド、ストッキング、スポーツ・医療用途に広く使用されています。",
+pr2_h:"リボン",pr2_p:"登山・キャンプ用安全ベルト、リュックストラップ、テント、個人保護具、フィットネス用品、ペットリード・首輪、軍・警察・消防用安全ベルト、荷物ストラップなどに適しています。",
+pr3_h:"ジャカードリボン",pr3_p:"ポリエステル、ナイロン、PP、アクリル素材を使用 — 精緻な柄、滑らかな質感、優れた強度・耐久性・色堅牢度・形状保持性が特長です。",
+pr4_h:"靴ひも",pr4_p:"靴の固定、アッパーの装飾、フィット感の調整、足首の保護に — 成長期の若者の足の健やかな発育に十分なスペースを確保します。",
+pr5_h:"ナイロンストラップ",pr5_p:"ファッション、ホームテキスタイル、靴、ギフト包装、かばん、装飾、ペンダントコード、ペット用品、カーテン、イヤホンコード、エコバッグ、自動車アクセサリー、DIYクラフトなどに幅広く使用されています。",
+pr6_h:"PPストラップ",pr6_p:"ポリプロピレン糸は可塑性に優れ、引張強度が高く、耐疲労性・低密度・耐衝撃性も良好 — 様々な分野で活躍する万能素材です。",
+pr7_h:"ゴムロープ",pr7_p:"衣料、建築、輸送機器、結束、スポーツ用品など、幅広い用途に対応します。",
+pr8_h:"ペットリード",pr8_p:"ナイロン素材で発色が良く、質感も優秀。ペットの特性に合わせた仕様・カラーで製造可能。特殊色、ジャカード柄、熱転写プリント、柔軟加工に対応し、完成品リードへの加工・組立も承ります。",
+pr9_h:"POLYベルト",pr9_p:"ポリアミド、ポリエステル、ポリウレタン、ポリエーテルなどの高分子素材によるベルト状素材。包装、輸送、建築、医療、製造業で広く使用され、高強度・耐摩耗・耐腐食・耐高低温が特長です。",
+pr10_h:"SP糸",pr10_p:"ポリエステル短繊維を撚った定番ミシン糸。引張強度・光沢・耐摩耗性が他の糸より優れ、柔らかく色堅牢度が高く、耐老化・耐海水性・優れた弾力性を備えています。",
+pr11_h:"スポーツ&amp;リハビリ腰ベルト",pr11_p:"スポーツパフォーマンスと医療リハビリ用途のためのサポート型織り腰ベルト。",
+pr12_h:"マスクコード",pr12_p:"医療・衛生マスク用に設計された、柔らかく肌に優しいゴムコード。",
+c_tag:"工場の生産能力",c_h2:"三大製品の年間生産能力",c_unit:"m/年 — 総生産能力",
+c_p:"2020年、当社の三大リボン製品の年間生産能力は5,000万メートルを突破。ベトナムの14,000㎡縫製工場がそれを支えています。",
+b1:"ゴムコード",bv1:"25,000,000 m/年",b2:"織りテープ",bv2:"23,000,000 m/年",b3:"細幅織りテープ",bv3:"4,500,000 m/年",
+e_tag:"主要設備",e_h2:"先進の機械設備、妥協なき生産効率",
+e1_h:"クロッシェ編機",e1_c:"日産 150,000 m",e1_p:"手工芸品、衣料、ホームテキスタイル用のクロッシェ生地を生産 — 生地の効率と品質を高め、デザインと革新の可能性を広げます。",
+e2_h:"高速ニードル織機",e2_c:"日産 200,000 m",e2_p:"高速織り、高い自動化、コンパクト設計、低騒音、容易なメンテナンス、簡単操作、高い生産効率 — 従来のシャトル織機からの理想的なアップグレードです。",
+e3_h:"製紐機",e3_c:"日産 47,000 m",e3_p:"生産効率を大幅に向上 — 低速織機の4〜5倍のスピードを実現し、使いやすくコスト効率にも優れています。",
+e4_h:"ジャカード織機",e4_c:"日産 12,000 m",e4_p:"コンピューター制御で精緻な柄の生地を生産 — 複雑なデザインを実現しながら、生地の効率と品質を高めます。",
+ct_tag:"織物業界のヒマラヤ",ct_h2:"取得認証",ct_p:"6つの権威ある認証 — SHKに寄せられる最高レベルの信頼と評価です。",
+ct1:"ISO 9001 品質マネジメントシステム認証",ct2:"ISO 45001 労働安全衛生マネジメントシステム認証",ct3:"ISO 14001 環境マネジメントシステム認証",ct4:"欧州規格レベル1安全認証(ベビーグレード)",ct5:"国際公認試験認証",ct6:"CSR 社会的責任マネジメントシステム認証",
+co_h:"卓越した品質、<br><em>満足のサービス。</em>",
+co_p:"SHKウィービングテクノロジーとともに、織物の技と妥協なき品質を、あなたのビジネスの成功に。世界中からのOEM・ODMのお問い合わせをお待ちしております。",
+co_card:"お問い合わせ",co_l1:"会社名",co_v1:"SHK Weaving Technology Co., LTD",co_l2:"事業モデル",co_v2:"OEM / ODM 織りテープ製造",co_l3:"工場",co_v3:"中国 · 日本 · ベトナム(14,000㎡ 縫製工場)",co_l5:"電話",
+ft:"最高の織りを、卓越の技で · © 2026 SHK Weaving Technology Co., LTD"
+},
+vi:{
+_title:"SHK Weaving Technology Co., LTD — Dệt Tinh Hoa, Tạo Khác Biệt",
+n_about:"Giới thiệu",n_adv:"Ưu điểm",n_prod:"Sản phẩm",n_cap:"Năng lực",n_eq:"Thiết bị",n_cert:"Chứng nhận",n_cta:"Liên hệ OEM / ODM",
+h_eyebrow:"Từ 2015 · Liên doanh Đài Loan × Nhật Bản",
+h_title:"Dệt Tinh Hoa,<br><em>Tạo Khác Biệt</em>",
+h_lead:"SHK Weaving Technology là công ty dệt chuyên nghiệp hàng đầu do doanh nghiệp Đài Loan và Nhật Bản đồng sáng lập — cung cấp hơn 500 loại băng dệt cao cấp cho ngành may mặc, y tế và an toàn công nghiệp trên toàn thế giới.",
+h_btn1:"Xem sản phẩm",h_btn2:"Hồ sơ công ty",
+s1:"Năng lực sản xuất/năm (m)",s2:"Loại sản phẩm băng dệt",s3:"Năm kinh nghiệm dệt",s4:"Nhà máy may Việt Nam",
+a_tag:"Hồ sơ công ty",a_h2:"Đối tác đáng tin cậy trong ngành dệt may",
+a_p1:"SHK Weaving Technology Co., Ltd. là công ty dệt chuyên nghiệp hàng đầu do doanh nghiệp Đài Loan và Nhật Bản đồng sáng lập. Với hơn 40 năm kinh nghiệm dệt và sản xuất, chúng tôi chuyên sản xuất băng dệt chất lượng cao, phục vụ cả hai mô hình <strong>OEM và ODM</strong> để đáp ứng nhu cầu đa dạng của khách hàng.",
+a_p2:"Chúng tôi cung cấp hơn 500 loại băng dệt khác nhau, được ứng dụng rộng rãi trong nhiều ngành như may mặc, vật tư y tế và an toàn công nghiệp. Với cam kết đổi mới và tay nghề thủ công, chúng tôi mang đến những sản phẩm đạt tiêu chuẩn cao nhất về chất lượng và công năng.",
+a_p3:"Di sản công nghệ dệt phong phú cùng khả năng thích ứng với thị trường giúp chúng tôi trở thành đối tác đáng tin cậy trong ngành dệt may. Chúng tôi không ngừng nỗ lực cung cấp giải pháp tùy chỉnh, dịch vụ xuất sắc và sản phẩm đáng tin cậy.",
+a_chip:"Nhà máy may Việt Nam",
+v1:"Tư duy",v2:"An toàn",v3:"Công bằng",v4:"Hợp tác",
+p1_tag:"Vị thế ngành",p1_p:"Top 10 trong ngành công nghệ dệt chuyên nghiệp.",
+p2_tag:"Lĩnh vực cốt lõi",p2_h:"Dệt · Băng dệt · Đan bện",p2_p:"Thế mạnh cốt lõi của chúng tôi là dệt, băng dệt và đan bện — nhà sản xuất ruy băng chuyên nghiệp do doanh nghiệp Đài Loan và Nhật Bản liên doanh thành lập, cung cấp mô hình OEM và ODM với hơn 500 sản phẩm.",
+p3_tag:"Định vị chiến lược",p3_h:"Dẫn đầu tại Trung Quốc · Nhật Bản · Việt Nam",p3_p:"Công ty sản xuất dây thun chuyên nghiệp hàng đầu tại Trung Quốc, Nhật Bản và Việt Nam.",
+adv_tag:"Vì sao chọn SHK",adv_h2:"Bốn ưu thế nổi bật kết tinh sự chuyên nghiệp của ngành ruy băng",
+ad1_h:"Dịch vụ khách hàng",ad1_p:"Dịch vụ khách hàng xuất sắc là chìa khóa để giành được niềm tin và uy tín. Chúng tôi kiên trì triết lý này trong toàn bộ quy trình — từ đặt hàng đến giao hàng — nhằm thúc đẩy tăng trưởng và phát triển kinh doanh lâu dài.",
+ad2_h:"Phát triển sáng tạo",ad2_p:"Phục vụ cả mô hình OEM và ODM với hơn 40 năm kinh nghiệm, chúng tôi không ngừng đổi mới. Danh mục hơn 500 loại ruy băng phục vụ ngành may mặc, y tế và an toàn công nghiệp.",
+ad3_h:"Tiêu chuẩn chất lượng",ad3_p:"Hợp tác sâu rộng và cung ứng lâu dài cho thị trường Nhật Bản, tuân thủ 100% tiêu chuẩn chất lượng nghiêm ngặt của Nhật, đảm bảo từng mét sản phẩm đều đạt yêu cầu.",
+ad4_h:"Hiệu quả chi phí",ad4_p:"Luôn kiên trì kiểm soát sản xuất chất lượng cao toàn diện — hướng tới lợi thế giá cạnh tranh nhất trong khi vẫn duy trì chất lượng tương đương.",
+f_tag:"Lĩnh vực chính",f_h2:"Ứng dụng trong mọi ngành",f_p:"Từ đai lưng thể thao, đai phục hồi chức năng đến dây khẩu trang và băng dệt may mặc — sản phẩm của chúng tôi phục vụ sáu lĩnh vực chính.",
+f1:"Y tế",f2:"Vệ sinh",f3:"May mặc",f4:"Công nghiệp",f5:"Thể thao",f6:"Đồ gia dụng",
+pr_tag:"Chi tiết sản phẩm",pr_h2:"Hơn 500 loại băng dệt &amp; ruy băng",pr_p:"Danh mục đầy đủ gồm dây thun, ruy băng, jacquard, dây giày, dây đai, dây thừng, đai và chỉ — tất cả đều có thể tùy chỉnh qua OEM / ODM.",
+pr1_h:"Dây thun bản",pr1_p:"Lý tưởng cho đồ lót, quần, quần áo trẻ em, áo len, đồ thể thao, váy cưới, áo thun, mũ, áo ngực và khẩu trang — dùng rộng rãi ở cổ tay áo, gấu áo, cạp quần, tất, và các ứng dụng thể thao, y tế.",
+pr2_h:"Ruy băng / Dây đai",pr2_p:"Phù hợp cho đai an toàn leo núi cắm trại, quai ba lô, lều, thiết bị bảo hộ cá nhân, dụng cụ thể hình, dây dắt và vòng cổ thú cưng, đai an toàn quân đội / cảnh sát / cứu hỏa, dây hành lý và nhiều hơn nữa.",
+pr3_h:"Ruy băng Jacquard",pr3_p:"Chế tác từ polyester, nylon, PP và acrylic — hoa văn tinh xảo, bề mặt mịn, độ bền cao, giữ màu và giữ form tốt.",
+pr4_h:"Dây giày",pr4_p:"Cố định giày, trang trí thân giày, điều chỉnh độ ôm và bảo vệ cổ chân — tạo không gian thoải mái cho bàn chân phát triển khỏe mạnh, đặc biệt ở lứa tuổi đang lớn.",
+pr5_h:"Dây nylon",pr5_p:"Dùng rộng rãi trong thời trang, dệt gia dụng, giày dép, đóng gói quà, hành lý, trang trí, dây treo, đồ thú cưng, rèm cửa, dây tai nghe, túi môi trường, phụ kiện ô tô, đồ thủ công DIY…",
+pr6_h:"Dây PP",pr6_p:"Sợi polypropylene có độ dẻo tốt, độ bền kéo cao, chống mỏi, mật độ thấp và chịu va đập tốt — đa dụng trong nhiều lĩnh vực.",
+pr7_h:"Dây thun tròn",pr7_p:"Ứng dụng đa dạng gồm quần áo, xây dựng, thiết bị vận tải, chằng buộc, dụng cụ thể thao và nhiều hơn nữa.",
+pr8_h:"Dây dắt thú cưng",pr8_p:"Chất liệu nylon, màu sắc tươi sáng, chất cảm tốt. Sản xuất theo quy cách và màu sắc tùy chỉnh; hỗ trợ màu đặc biệt, hoa văn jacquard, in chuyển nhiệt, xử lý làm mềm — có thể gia công lắp ráp thành dây dắt hoàn chỉnh theo yêu cầu.",
+pr9_h:"Đai POLY",pr9_p:"Vật liệu dạng đai từ polymer (polyamide, polyester, polyurethane, polyether) dùng trong đóng gói, vận tải, xây dựng, y tế và sản xuất — độ bền cao, chịu mài mòn, chống ăn mòn, chịu nhiệt độ cao/thấp.",
+pr10_h:"Chỉ SP",pr10_p:"Chỉ may từ xơ polyester ngắn xe lại, có độ bền kéo, độ bóng và độ chịu mài mòn vượt trội — mềm mại, bền màu, chống lão hóa, chịu nước biển với độ đàn hồi tuyệt vời.",
+pr11_h:"Đai lưng thể thao &amp; phục hồi",pr11_p:"Đai lưng dệt hỗ trợ cho hiệu suất thể thao và phục hồi chức năng y tế.",
+pr12_h:"Dây khẩu trang",pr12_p:"Dây thun mềm mại, thân thiện với da, thiết kế chuyên cho khẩu trang y tế và vệ sinh.",
+c_tag:"Năng lực nhà máy",c_h2:"Năng lực sản xuất hàng năm của ba dòng sản phẩm chính",c_unit:"mét/năm — tổng năng lực",
+c_p:"Năm 2020, năng lực sản xuất hàng năm của ba dòng ruy băng chính vượt 50.000.000 mét, với sự hỗ trợ của nhà máy may 14.000㎡ tại Việt Nam.",
+b1:"Dây thun tròn",bv1:"25.000.000 m/năm",b2:"Băng dệt",bv2:"23.000.000 m/năm",b3:"Băng dệt khổ hẹp",bv3:"4.500.000 m/năm",
+e_tag:"Thiết bị chính",e_h2:"Máy móc tiên tiến, hiệu suất tối ưu",
+e1_h:"Máy dệt móc (Crochet)",e1_c:"Công suất 150.000 m/ngày",e1_p:"Sản xuất vải móc cho đồ thủ công, quần áo và dệt gia dụng — nâng cao hiệu suất, chất lượng vải và mở rộng khả năng thiết kế, sáng tạo.",
+e2_h:"Máy dệt kim tốc độ cao",e2_c:"Công suất 200.000 m/ngày",e2_p:"Dệt băng nhanh, tự động hóa cao, kích thước gọn, ít ồn, dễ bảo trì, vận hành đơn giản, hiệu suất cao — lựa chọn nâng cấp lý tưởng từ máy dệt thoi truyền thống.",
+e3_h:"Máy đan bện",e3_c:"Công suất 47.000 m/ngày",e3_p:"Tăng đáng kể hiệu suất sản xuất — nhanh hơn 4–5 lần so với máy dệt tốc độ thấp, dễ sử dụng và tiết kiệm chi phí.",
+e4_h:"Máy dệt Jacquard",e4_c:"Công suất 12.000 m/ngày",e4_p:"Máy dệt điều khiển bằng máy tính, sản xuất vải hoa văn tinh xảo — hiện thực hóa thiết kế phức tạp đồng thời nâng cao hiệu suất và chất lượng vải.",
+ct_tag:"Đỉnh Himalaya của ngành dệt",ct_h2:"Chứng nhận của công ty",ct_p:"Sáu chứng nhận uy tín — mức độ tin cậy và công nhận cao nhất dành cho SHK.",
+ct1:"Chứng nhận hệ thống quản lý chất lượng ISO 9001",ct2:"Chứng nhận hệ thống quản lý an toàn sức khỏe nghề nghiệp ISO 45001",ct3:"Chứng nhận hệ thống quản lý môi trường ISO 14001",ct4:"Chứng nhận an toàn cấp 1 tiêu chuẩn châu Âu (cấp độ trẻ em)",ct5:"Chứng nhận kiểm nghiệm được công nhận quốc tế",ct6:"Chứng nhận hệ thống quản lý trách nhiệm xã hội CSR",
+co_h:"Chất lượng xuất sắc,<br><em>Dịch vụ tận tâm.</em>",
+co_p:"Đồng hành cùng SHK Weaving Technology để trải nghiệm nghệ thuật dệt kết hợp chất lượng không khoan nhượng cho thành công của doanh nghiệp bạn. Chúng tôi hoan nghênh mọi yêu cầu OEM và ODM trên toàn thế giới.",
+co_card:"Liên hệ",co_l1:"Công ty",co_v1:"SHK Weaving Technology Co., LTD",co_l2:"Mô hình kinh doanh",co_v2:"Sản xuất băng dệt OEM / ODM",co_l3:"Nhà máy",co_v3:"Trung Quốc · Nhật Bản · Việt Nam (nhà máy may 14.000㎡)",co_l5:"Điện thoại",
+ft:"Dệt Tinh Hoa, Tạo Khác Biệt · © 2026 SHK Weaving Technology Co., LTD"
+}
+};
+
+(function(){
+  /* capture English defaults from the DOM */
+  var EN = {_title: document.title};
+  document.querySelectorAll('[data-i18n]').forEach(function(el){ EN[el.dataset.i18n] = el.innerHTML; });
+
+  function setLang(l){
+    var dict = (l === 'en') ? EN : I18N[l];
+    if(!dict) { l = 'en'; dict = EN; }
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k = el.dataset.i18n;
+      if(dict[k] !== undefined) el.innerHTML = dict[k];
+    });
+    document.title = dict._title || EN._title;
+    document.documentElement.lang = (l === 'zh') ? 'zh-Hant' : l;
+    document.querySelectorAll('.lang button, .m-lang button').forEach(function(b){
+      b.classList.toggle('on', b.dataset.lang === l);
+    });
+    try{ localStorage.setItem('shk-lang', l); }catch(e){}
+  }
+  document.querySelectorAll('.lang button, .m-lang button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.dataset.lang); });
+  });
+  var saved = null;
+  try{ saved = localStorage.getItem('shk-lang'); }catch(e){}
+  if(!saved){
+    var nl = (navigator.language || 'en').toLowerCase();
+    if(nl.indexOf('zh') === 0) saved = 'zh';
+    else if(nl.indexOf('ja') === 0) saved = 'ja';
+    else if(nl.indexOf('vi') === 0) saved = 'vi';
+    else saved = 'en';
+  }
+  setLang(saved);
+})();
+
+/* ===================== UI behaviours ===================== */
 (function(){
   var hdr = document.getElementById('hdr');
   var burger = document.getElementById('burger');
   var mmenu = document.getElementById('mmenu');
   var toTop = document.getElementById('toTop');
 
-  /* Header shadow + back-to-top visibility */
   function onScroll(){
     hdr.classList.toggle('scrolled', window.scrollY > 8);
     toTop.classList.toggle('show', window.scrollY > 700);
@@ -535,7 +749,6 @@ footer .fl span{color:var(--brand)}
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
 
-  /* Mobile menu */
   burger.addEventListener('click', function(){
     var open = mmenu.classList.toggle('open');
     burger.classList.toggle('open', open);
@@ -549,10 +762,8 @@ footer .fl span{color:var(--brand)}
     });
   });
 
-  /* Back to top */
   toTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
 
-  /* Scroll reveal */
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
       if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
@@ -560,7 +771,6 @@ footer .fl span{color:var(--brand)}
   }, {threshold:.12, rootMargin:'0px 0px -6% 0px'});
   document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
 
-  /* Count-up stats */
   function animateCount(el){
     var to = parseInt(el.dataset.to, 10);
     var suffix = el.dataset.suffix || '';
@@ -581,7 +791,6 @@ footer .fl span{color:var(--brand)}
   }, {threshold:.6});
   document.querySelectorAll('.count').forEach(function(el){ cio.observe(el); });
 
-  /* Capacity bars */
   var bars = document.getElementById('bars');
   if(bars){
     var bio = new IntersectionObserver(function(entries){
@@ -595,7 +804,6 @@ footer .fl span{color:var(--brand)}
     bio.observe(bars);
   }
 
-  /* Active nav highlight */
   var links = document.querySelectorAll('nav.menu a');
   var map = {};
   links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
