@@ -21,7 +21,7 @@
   --paper:#ffffff;
   --paper-alt:#f6f5f3;
   --line:#e6e3df;
-  --max:1180px;
+  --max:1400px;
   --shadow-lg:0 18px 44px rgba(0,0,0,.10);
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -29,7 +29,9 @@ html{scroll-behavior:smooth}
 body{font-family:"Avenir Next","Segoe UI","Helvetica Neue",Arial,"PingFang TC","Microsoft JhengHei",sans-serif;color:var(--ink);background:var(--paper);line-height:1.7;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+@media(min-width:1700px){:root{--max:1560px}}
+@media(max-width:1280px){:root{--max:1180px}}
 
 /* ===== Scroll reveal ===== */
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
@@ -167,6 +169,7 @@ section.alt{background:var(--paper-alt)}
 .prod .bd{padding:20px 22px 24px}
 .prod h3{font-size:16.5px;font-weight:800}
 .prod p{margin-top:8px;font-size:13.5px;color:var(--ink-soft)}
+@media(min-width:1400px){.prod-grid{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:900px){.prod-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.prod-grid{grid-template-columns:1fr}}
 
